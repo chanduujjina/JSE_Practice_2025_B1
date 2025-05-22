@@ -1,122 +1,69 @@
-# Java Operators Quiz
-
-Test your understanding of Java operators. Click **See Answer** to view the correct choice and explanation.
+# Java Control Statements Quiz
 
 ---
 
-### 1. What is the result of: `5 & 3`?
+### Question 1:  
+Which of the following is a valid conditional control statement in Java?
 
-- [ ] 7  
-- [ ] 0  
-- [ ] 1  
-- [ ] 3  
+- [ ] loop  
+- [x] if  
+- [ ] switch-case-default  
+- [ ] loop-if  
 
 <details>
   <summary><strong>See Answer</strong></summary>
 
-✅ **Answer:** `1`  
-`5 & 3` → `0101 & 0011 = 0001` → `1` in decimal.
-
+✅ <strong>Answer:</strong> if  
+The if statement is a conditional control structure used for decision-making in Java.
 </details>
 
 ---
 
-### 2. What is the result of: `5 | 3`?
+### Question 2:  
+Which control statement is used to execute a block of code repeatedly while a condition is true?
 
-- [ ] 0  
-- [ ] 7  
-- [ ] 1  
-- [ ] 3  
+- [ ] if  
+- [ ] switch  
+- [x] while  
+- [ ] continue  
 
 <details>
   <summary><strong>See Answer</strong></summary>
 
-✅ **Answer:** `7`  
-`5 | 3` → `0101 | 0011 = 0111` → `7` in decimal.
-
+✅ <strong>Answer:</strong> while  
+The while loop continues to execute a block of code as long as the condition is true.
 </details>
 
 ---
 
-### 3. What does the `^` (XOR) operator do?
+### Question 3:  
+Which of the following is not a valid loop statement in Java?
 
-- [ ] Sets bits to 1 where both are 1  
-- [ ] Inverts all bits  
-- [ ] Sets bits to 1 where bits differ  
-- [ ] Shifts bits left  
+- [ ] for  
+- [x] repeat-until  
+- [ ] while  
+- [ ] do-while  
 
 <details>
   <summary><strong>See Answer</strong></summary>
 
-✅ **Answer:** Sets bits to 1 where bits differ  
-XOR compares each bit and sets it to 1 only if the bits are different.
-
+✅ <strong>Answer:</strong> repeat-until  
+repeat-until is not a loop construct in Java; it's used in some other languages like Pascal.
 </details>
 
 ---
 
-### 4. What is the result of: `~5` in Java?
+### Question 4:  
+What will the following code print?
 
-- [ ] -6  
-- [ ] 6  
-- [ ] -5  
-- [ ] 5  
-
-<details>
-  <summary><strong>See Answer</strong></summary>
-
-✅ **Answer:** `-6`  
-`~5` flips all bits: `~00000101` → `11111010` → `-6` in two's complement.
-
-</details>
-
----
-
-### 5. What does the `>>` operator do?
-
-- [ ] Left shift with sign  
-- [ ] Right shift with sign  
-- [ ] Right shift with zero-fill  
-- [ ] Bitwise OR  
-
-<details>
-  <summary><strong>See Answer</strong></summary>
-
-✅ **Answer:** Right shift with sign  
-The `>>` operator shifts bits to the right, preserving the sign bit (arithmetic shift).
-
-</details>
-
----
-
-### 6. What does the `>>>` operator do?
-
-- [ ] Unsigned right shift  
-- [ ] Signed right shift  
-- [ ] Logical AND  
-- [ ] Bitwise NOT  
-
-<details>
-  <summary><strong>See Answer</strong></summary>
-
-✅ **Answer:** Unsigned right shift  
-The `>>>` operator performs a logical (zero-fill) right shift.
-
-</details>
-
----
-
-### 7. What is the result of: `5 << 1`?
-
-- [ ] 2  
-- [ ] 10  
-- [ ] 5  
-- [ ] 8  
-
-<details>
-  <summary><strong>See Answer</strong></summary>
-
-✅ **Answer:** `10`  
-`5 << 1` shifts left by one bit: `0101` → `1010` = `10`
-
-</details>
+```java
+int x = 3;
+switch(x) {
+    case 1:
+        System.out.print("One");
+        break;
+    case 3:
+        System.out.print("Three");
+    default:
+        System.out.print("Default");
+}
