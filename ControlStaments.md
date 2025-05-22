@@ -58,5 +58,28 @@ switch (expression) {
         // default block
 }
 ```
+### 🔹 for Loop
+``` java
+for (initialization; condition; update) {
+    // loop body
+}
+
+```
+
+### 🔹 while Loop
+```java
+while (condition) {
+    // loop body
+}
+
+```
+
+### 🔹 do-while Loop
+```java
+do {
+    // loop body
+} while (condition);
+
+```
 
 
