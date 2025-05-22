@@ -84,7 +84,7 @@ do {
 
 ### 🔹 Jumping or branching statements
 
-🔹 break Statement
+### 🔹 break Statement
    Terminates the current loop or switch statement.
 ```java
 for (int i = 0; i < 5; i++) {
@@ -93,6 +93,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-🔹 Continue Statement
+###🔹 Continue Statement
+Skips the current iteration and proceeds to the next one.
 
 
