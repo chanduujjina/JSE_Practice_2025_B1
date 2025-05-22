@@ -15,3 +15,9 @@ Executes a block if the condition is true.
 if (condition) {
     // code to execute
 }
+
+int number = 10;
+if (number > 0) {
+    System.out.println("Positive number");
+}
+
