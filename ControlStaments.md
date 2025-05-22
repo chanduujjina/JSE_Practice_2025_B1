@@ -102,4 +102,7 @@ for (int i = 0; i < 5; i++) {
 }
  ```
 
+### 🔹 return Statement
+    Exits from the current method and optionally returns a value.
+
 
