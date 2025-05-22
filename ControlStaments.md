@@ -46,4 +46,17 @@ if (condition1) {
 ### 🔹 switch Statement
 Allows selection among multiple values of an expression.
 
+```java
+switch (expression) {
+    case value1:
+        // block of code
+        break;
+    case value2:
+        // block of code
+        break;
+    default:
+        // default block
+}
+```
+
 
