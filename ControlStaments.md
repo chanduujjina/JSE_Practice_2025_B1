@@ -43,4 +43,7 @@ if (condition1) {
 }
 ```
 
+### 🔹 switch Statement
+Allows selection among multiple values of an expression.
+
 
