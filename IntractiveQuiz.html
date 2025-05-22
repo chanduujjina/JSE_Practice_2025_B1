@@ -1,0 +1,43 @@
+# Java Identifiers - Interactive Quiz
+
+## Question 1:
+Which of the following is a valid Java identifier?
+
+<button onclick="checkAnswer(this, false)">2ndVariable</button><br/>
+<button onclick="checkAnswer(this, false)">my-variable</button><br/>
+<button onclick="checkAnswer(this, true)">_myVariable</button><br/>
+<button onclick="checkAnswer(this, false)">class</button><br/>
+
+<p id="answer1" style="font-weight: bold;"></p>
+
+<hr/>
+
+## Question 2:
+Can a Java identifier start with a dollar sign `$`?
+
+<button onclick="checkAnswer(this, true)">Yes</button><br/>
+<button onclick="checkAnswer(this, false)">No</button><br/>
+
+<p id="answer2" style="font-weight: bold;"></p>
+
+<hr/>
+
+<script>
+  let score = 0;
+function checkAnswer(button, isCorrect) {
+  const resultPara = button.parentElement.querySelector("p");
+  if (!resultPara) return;
+
+  if (resultPara.innerText) return; // Prevent multiple clicks
+
+  if (isCorrect) {
+    resultPara.innerText = "✅ Correct!";
+    resultPara.style.color = "green";
+    score++;
+  } else {
+    resultPara.innerText = "❌ Incorrect!";
+    resultPara.style.color = "red";
+  }
+  document.getElementById("score").innerText = `Score: ${score}`;
+}
+</script>
