@@ -22,3 +22,14 @@ if (number > 0) {
 }
 ```
 
+### 🔹 if Statement
+
+```java
+if (condition) {
+    // code block if condition is true
+} else {
+    // code block if condition is false
+}
+
+```
+
