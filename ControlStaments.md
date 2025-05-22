@@ -85,5 +85,14 @@ do {
 ### 🔹 Jumping or branching statements
 
 🔹 break Statement
+Terminates the current loop or switch statement.
+```java
+for (int i = 0; i < 5; i++) {
+    if (i == 3) break;
+    System.out.println(i);
+}
+```
+
+🔹 Continue Statement
 
 
