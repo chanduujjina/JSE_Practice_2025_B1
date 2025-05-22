@@ -22,6 +22,10 @@ public class BitWiseOPrDemo1 {
 		int bitXor = ~a;
 		
 		System.out.println(bitXor);
+		
+		int bitwiseLeftByOneResult = a << 1;
+		
+		System.out.println(bitwiseLeftByOneResult);
 	}
 
 }
