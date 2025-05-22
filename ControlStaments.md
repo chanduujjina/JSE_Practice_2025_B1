@@ -22,7 +22,7 @@ if (number > 0) {
 }
 ```
 
-### 🔹 if Statement
+### 🔹  if-else Statement
 
 ```java
 if (condition) {
@@ -30,6 +30,5 @@ if (condition) {
 } else {
     // code block if condition is false
 }
-
 ```
 
