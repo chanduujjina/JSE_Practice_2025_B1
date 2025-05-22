@@ -50,7 +50,7 @@
 <a href="JavaIdentifiers.md">Click here for Java Identifiers</a>
 
 <h3>Control Statements</h3>
-<a href="ControlStaments.md">Click here for Java Operators</a>
+<a href="ControlStaments.md">Click here for Control statements</a>
 
 
 
