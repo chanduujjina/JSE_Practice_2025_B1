@@ -104,8 +104,7 @@ for (int i = 0; i < 5; i++) {
 
 ### 🔹 return Statement
     Exits from the current method and optionally returns a value.
-
-    ```java
+ ```java
     public int sum(int a, int b) {
     return a + b;
 }
