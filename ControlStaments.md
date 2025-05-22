@@ -95,5 +95,12 @@ for (int i = 0; i < 5; i++) {
 
 ### 🔹 Continue Statement
     Skips the current iteration and proceeds to the next one.
+    ```java
+    for (int i = 0; i < 5; i++) {
+    if (i == 2) continue;
+    System.out.println(i);
+}
+
+    ```
 
 
