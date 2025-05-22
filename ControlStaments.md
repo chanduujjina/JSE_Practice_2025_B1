@@ -93,7 +93,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-###🔹 Continue Statement
-Skips the current iteration and proceeds to the next one.
+### 🔹 Continue Statement
+    Skips the current iteration and proceeds to the next one.
 
 
