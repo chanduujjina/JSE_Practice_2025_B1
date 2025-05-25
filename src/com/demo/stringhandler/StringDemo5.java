@@ -4,7 +4,7 @@ public class StringDemo5 {
 	
 	public static void main(String[] args) {
 		
-		String name  = "Chandua";
+		String name  = "Sudhakar";
 		
 		char ch1 = name.charAt(0);//method call
 		
