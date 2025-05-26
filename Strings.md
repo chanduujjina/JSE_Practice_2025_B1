@@ -77,5 +77,5 @@
 
 ---
 
-**Tip:** Emphasize string immutability and method chaining during exercises.
+
 
