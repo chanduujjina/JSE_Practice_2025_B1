@@ -67,7 +67,17 @@ String regexAlphanumeric = "^[a-zA-Z0-9]+$";
 ```
 
 
+## ✅ PAN Number Validation Regex (India)
 
+```regex
+^[A-Z]{5}[0-9]{4}[A-Z]{1}$
+```
+
+## ✅ Aadhaar Number Validation Regex (India)
+
+```regex
+^[2-9][0-9]{11}$
+```
 
 
 
