@@ -60,6 +60,23 @@ String regexAlphabets = "^[a-zA-Z]+$";
 
 String regexAlphanumeric = "^[a-zA-Z0-9]+$";
 
+## ✅ DOB Validation Regex (MM/DD/YYYY Format)
+
+```regex
+^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(19|20)\d{2}$
+
+
+| **Component** | **Explanation** |                                     |                                  |
+| ------------- | --------------- | ----------------------------------- | -------------------------------- |
+| `^`           | Start of string |                                     |                                  |
+| \`(0\[1-9]    | 1\[0-2])\`      | Matches valid months: `01` to `12`  |                                  |
+| `/`           | Separator       |                                     |                                  |
+| \`(0\[1-9]    | \[12]\[0-9]     | 3\[01])\`                           | Matches valid days: `01` to `31` |
+| `/`           | Separator       |                                     |                                  |
+| \`(19         | 20)\d{2}\`      | Matches years from `1900` to `2099` |                                  |
+| `$`           | End of string   |                                     |                                  |
+
+
 
 
 
