@@ -11,7 +11,7 @@ public class PassByValueDemo1 {
 	}
 
 	private static void m1(Integer val) {
-		val = null;//unreferencing the object
+		val = null;
 		
 		System.out.println(val);
 		
