@@ -6,8 +6,11 @@ public class ValueOfDemo {
 		
 		int num = 10;
 		
-		String intValInString = String.valueOf(num);
+		String intValInString = String.valueOf(num);// "10"
 		
+		System.out.println(intValInString);
+		
+		//it will convert other data type like Number,Non number to String value
 		
 	}
 
