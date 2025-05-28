@@ -68,3 +68,40 @@ When a **StringBuffer** (or **StringBuilder**) needs to resize its internal char
 - The new capacity is usually calculated as:
 
 
+- If the `minimumCapacity` you need (after the append/insert) is **larger than this calculated newCapacity**, then the new capacity becomes exactly the `minimumCapacity`.
+
+---
+
+## Example:
+
+Suppose you have:
+
+- Current capacity = 16
+- You want to append a string so the new required capacity = 20 (exceeds 16)
+
+Calculation:
+
+- `(16 * 2) + 2 = 34` (new capacity)
+- Since 20 < 34, new capacity = 34
+
+So, the internal buffer expands from 16 to 34.
+
+---
+
+## Why this formula?
+
+- Doubling capacity roughly doubles the space each time it grows, which helps reduce the number of costly array copying operations as your buffer grows.
+
+---
+
+## Summary
+
+| Condition                                | New capacity                |
+|------------------------------------------|-----------------------------|
+| `minimumCapacity` ≤ `(oldCapacity * 2) + 2`  | `(oldCapacity * 2) + 2`         |
+| `minimumCapacity` > `(oldCapacity * 2) + 2`  | `minimumCapacity` (exact size)  |
+
+---
+
+If you want, I can provide a quick Java example that shows resizing happening! Would you like that?
+
