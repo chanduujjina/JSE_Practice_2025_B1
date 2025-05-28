@@ -58,4 +58,13 @@
 - `public java.lang.AbstractStringBuilder java.lang.StringBuffer.deleteCharAt(int)`
 - `public java.lang.AbstractStringBuilder java.lang.StringBuffer
 
+# StringBuffer Resizing Formula
+
+When a **StringBuffer** (or **StringBuilder**) needs to resize its internal character array because the current capacity isn’t enough, Java uses a formula to decide the **new capacity**.
+
+## How does resizing work in StringBuffer?
+
+- When you append or insert data that exceeds the current capacity, the buffer grows.
+- The new capacity is usually calculated as:
+
 
