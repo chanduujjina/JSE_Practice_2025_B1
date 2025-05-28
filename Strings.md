@@ -112,5 +112,19 @@ The java.lang.String class provides many useful methods to perform operations on
 |27	|String trim() |	removes beginning and ending spaces of this string.
 |28	|static String valueOf(int value) | 	converts given type into string. It is an overloaded method.
 
+---
+
+## 🧩 Common Format Specifiers
+
+| Format | Description                            | Used With                   | Example                      |
+|--------|----------------------------------------|-----------------------------|------------------------------|
+| `%s`   | String                                  | `String`, `Object`          | `String.format("%s", "Java")` → `"Java"` |
+| `%d`   | Decimal integer                         | `byte`, `short`, `int`, `long` | `"%d".formatted(42)` → `"42"` |
+| `%f`   | Floating-point number (decimal format) | `float`, `double`           | `String.format("%.2f", 3.14)` → `"3.14"` |
+| `%c`   | Single character                        | `char`                      | `String.format("%c", 'A')` → `"A"` |
+| `%b`   | Boolean value                           | `boolean`, `Boolean`        | `String.format("%b", true)` → `"true"` |
+| `%n`   | Line separator (platform-independent)  | —                           | `System.out.printf("Line1%nLine2")` |
+
+---
 
 
