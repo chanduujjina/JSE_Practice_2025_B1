@@ -7,7 +7,7 @@ public class ReflectionDemio1 {
 	
 	public static void main(String[] args) {
 		
-		Method[] declaredMethods = StringBuilder.class.getMethods();
+		Method[] declaredMethods = StringBuffer.class.getMethods();
 		
 		Arrays.stream(declaredMethods).map(Method ::toString).sorted().forEach(System.out ::println);
 		
