@@ -18,3 +18,15 @@
 String s = "Hello";
 s.concat(" World"); // creates a new object
 System.out.println(s); // prints "Hello"
+
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb); // prints "Hello World"
+
+StringBuffer sbf = new StringBuffer("Hello");
+sbf.append(" World");
+System.out.println(sbf); // prints "Hello World"
+
+```
+
+
