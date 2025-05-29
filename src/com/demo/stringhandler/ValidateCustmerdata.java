@@ -1,5 +1,5 @@
 package com.demo.stringhandler;
-public class Demo1{
+public class ValidateCustmerdata{
 	public static void main(String args[]) {
 		number("902134567");
 		number("0123456789");
