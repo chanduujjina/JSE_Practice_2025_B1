@@ -165,9 +165,9 @@ class Demo {
 | Called by   | JVM during object creation | Manually called       |
 
 🎯 Uses of Constructor
-Object creation and initialization
+### Object creation and initialization
 
-Code reusability (via overloading)
+### Code reusability (via overloading)
 
-Default setup for instance variables
+## Default setup for instance variables
 
