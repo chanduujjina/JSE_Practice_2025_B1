@@ -164,5 +164,10 @@ class Demo {
 | Return type | No return type             | Must have return type |
 | Called by   | JVM during object creation | Manually called       |
 
+🎯 Uses of Constructor
+Object creation and initialization
 
+Code reusability (via overloading)
+
+Default setup for instance variables
 
