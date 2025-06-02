@@ -61,7 +61,7 @@ It is a **weak association**, meaning the contained object **can exist independe
 3. **Many-to-One**
 4. **Many-to-Many**
 
-
+---
 
 # Instance Block in Java
 
