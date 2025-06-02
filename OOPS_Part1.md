@@ -61,6 +61,13 @@ It is a **weak association**, meaning the contained object **can exist independe
 3. **Many-to-One**
 4. **Many-to-Many**
 
+Comparison with Aggregation and Composition
+| Relationship | Description                                                   | Lifetime Dependency             | Ownership                                       |
+| ------------ | ------------------------------------------------------------- | ------------------------------- | ----------------------------------------------- |
+| Association  | Objects are related but independent                           | None                            | No                                              |
+| Aggregation  | "Has-a" relationship, whole and part exist independently      | Part can exist without whole    | Whole owns part but part can live independently |
+| Composition  | Strong "Has-a" relationship, whole controls lifecycle of part | Part cannot exist without whole | Whole owns part and controls its lifecycle      |
+
 ---
 
 # Instance Block in Java
