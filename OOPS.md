@@ -74,4 +74,14 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 ## 👥 8. **Real-World Modeling**
 - Objects in OOP represent real-world entities.
 - Makes system desig
- 
+
+  📌 Summary
+
+ | Feature       | Benefit                      |
+| ------------- | ---------------------------- |
+| Modularity    | Easier to manage code        |
+| Reusability   | Reduces code duplication     |
+| Encapsulation | Secure and robust code       |
+| Polymorphism  | Flexible and scalable code   |
+| Abstraction   | Simplifies system complexity |
+
