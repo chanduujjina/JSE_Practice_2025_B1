@@ -127,4 +127,16 @@ public class Student {
 }
 
 ```
+3. Parameterized Constructor
+Accepts arguments to initialize fields with custom values.
+```
+public class Student {
+    String name;
+    int age;
 
+    Student(String n, int a) {
+        name = n;
+        age = a;
+    }
+}
+```
