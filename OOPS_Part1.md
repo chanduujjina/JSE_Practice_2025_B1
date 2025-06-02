@@ -41,6 +41,25 @@ It is a **weak association**, meaning the contained object **can exist independe
 | Example              | University and Department | Human and Heart          |
 | Coupling             | Loose Coupling            | Tight Coupling           |
 
+# Instance Block in Java
+
+## What is an Instance Block?
+
+An **instance block** (also called an **instance initializer block**) is a block of code inside a class that is executed **every time an instance (object) of the class is created**, right before the constructor is executed.
+
+It is used to initialize instance variables or to execute some common code for all constructors.
+
+---
+
+## Syntax
+
+```java
+class MyClass {
+    {
+        // instance block code
+        System.out.println("Instance block executed");
+    }
+}
 
 
 
