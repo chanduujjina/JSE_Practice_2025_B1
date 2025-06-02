@@ -119,5 +119,12 @@ Initializes instance variables with default values.
 
 2. No-Arg Constructor
 A constructor without parameters.
+```
+public class Student {
+    Student() {
+        System.out.println("Student Created");
+    }
+}
 
+```
 
