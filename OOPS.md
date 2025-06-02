@@ -88,3 +88,36 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 | Polymorphism  | Flexible and scalable code   |
 | Abstraction   | Simplifies system complexity |
 
+---
+
+📌 What is a Constructor?
+A constructor in Java is a special method that is called automatically when an object is created. It is used to initialize objects.
+
+🔍 Features of Constructors
+Has the same name as the class.
+
+No return type, not even void.
+
+Automatically invoked when an object is instantiated.
+
+Can be overloaded (i.e., multiple constructors with different parameter lists).
+
+🧱 Types of Constructors
+1. Default Constructor
+Provided by Java if no constructor is defined.
+```
+class Test {
+    int x; // 0 by default
+    Test() {
+        System.out.println("Default constructor");
+    }
+}
+
+```
+
+Initializes instance variables with default values.
+
+2. No-Arg Constructor
+A constructor without parameters.
+
+
