@@ -41,6 +41,28 @@ It is a **weak association**, meaning the contained object **can exist independe
 | Example              | University and Department | Human and Heart          |
 | Coupling             | Loose Coupling            | Tight Coupling           |
 
+
+# Association in Object-Oriented Programming
+
+## What is Association?
+
+**Association** is a relationship between two or more objects where they are aware of each other and can communicate but **do not depend on each other's lifecycle**. It represents a "uses-a" or "knows-a" relationship.
+
+- Objects are connected but **independent**.
+- Both objects can exist independently.
+- It is a **loosely coupled** relationship.
+
+---
+
+## Types of Association
+
+1. **One-to-One**
+2. **One-to-Many**
+3. **Many-to-One**
+4. **Many-to-Many**
+
+
+
 # Instance Block in Java
 
 ## What is an Instance Block?
