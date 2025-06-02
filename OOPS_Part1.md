@@ -12,4 +12,24 @@ If the container object is destroyed, the contained object is also destroyed.
 
 Implemented by instantiating the dependent object inside the class.
 
-[Human] ---owns---> [Heart]
+2. Aggregation (Weak Has-a)
+✅ Definition:
+An Aggregation relationship means one object uses another object, but the used object can exist independently of the user.
+
+🧠 Key Points:
+Weak association.
+
+Lifecycle is not tightly bound.
+
+Object is usually passed in via constructor or setter.
+
+🔁 Comparison Table:
+
+| Feature         | Composition                       | Aggregation                 |
+| --------------- | --------------------------------- | --------------------------- |
+| Type            | Strong Has-a                      | Weak Has-a                  |
+| Ownership       | Owns the object                   | Uses the object             |
+| Lifespan        | Part’s lifecycle depends on whole | Independent lifecycle       |
+| Object Creation | Created inside the class          | Passed externally           |
+| Example         | Human has-a Heart                 | University has-a Department |
+
