@@ -32,6 +32,14 @@ It is a **weak association**, meaning the contained object **can exist independe
 - Object is typically **passed through a constructor** or **setter method**.
 
 ---
+📊 Aggregation vs Composition
+| Feature              | Aggregation               | Composition              |
+| -------------------- | ------------------------- | ------------------------ |
+| Type of Relationship | Weak "Has-a"              | Strong "Has-a"           |
+| Lifespan Dependency  | Independent               | Dependent                |
+| Object Creation      | Passed as argument        | Created inside the class |
+| Example              | University and Department | Human and Heart          |
+| Coupling             | Loose Coupling            | Tight Coupling           |
 
 
 
