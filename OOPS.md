@@ -140,3 +140,29 @@ public class Student {
     }
 }
 ```
+
+💡 Constructor Overloading
+You can define multiple constructors in the same class with different parameter lists.
+```
+class Demo {
+    Demo() {
+        System.out.println("No-arg constructor");
+    }
+
+    Demo(int x) {
+        System.out.println("Parameterized constructor: " + x);
+    }
+}
+
+```
+
+🔄 Difference: Constructor vs Method
+
+| Feature     | Constructor                | Method                |
+| ----------- | -------------------------- | --------------------- |
+| Name        | Same as class              | Any valid identifier  |
+| Return type | No return type             | Must have return type |
+| Called by   | JVM during object creation | Manually called       |
+
+
+
