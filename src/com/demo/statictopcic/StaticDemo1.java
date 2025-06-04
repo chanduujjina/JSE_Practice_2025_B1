@@ -10,7 +10,7 @@ public class StaticDemo1 {
 	
 	private static String address = "test1";
 	
-	//static block will load after varible load
+	//static block will load after variable load
 	static {
 		System.out.println("address:"+address);
 		orgizationName = "Star technologies";
