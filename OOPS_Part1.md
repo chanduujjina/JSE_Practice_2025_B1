@@ -1,4 +1,4 @@
-# 📘 Composition vs Aggregation in OOP
+![image](https://github.com/user-attachments/assets/ea012627-fdc8-4a7c-b708-406e22568140)# 📘 Composition vs Aggregation in OOP
 
 Both **Composition** and **Aggregation** represent **"Has-a"** relationships in OOP, but they differ in terms of **ownership** and **object lifecycle**.
 
@@ -89,6 +89,10 @@ class MyClass {
         System.out.println("Instance block executed");
     }
 }
-
+```
+# Encapsulation
+Encapsulation binds data and methods together.
+It hides the internal state of an object and protects it from unauthorized access.
+Achieved using private variables and public getter/setter methods.
 
 
