@@ -92,8 +92,9 @@ class MyClass {
 ```
 # Encapsulation
 
-Encapsulation binds data and methods together.
-It hides the internal state of an object and protects it from unauthorized access.
-Achieved using private variables and public getter/setter methods.
+- **Encapsulation** binds data and methods together.  
+- It **hides the internal state** of an object and **protects it from unauthorized access**.  
+- Achieved using **private variables** and **public getter/setter methods**.
+
 
 
