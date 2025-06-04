@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ea012627-fdc8-4a7c-b708-406e22568140)# 📘 Composition vs Aggregation in OOP
+ 📘 Composition vs Aggregation in OOP
 
 Both **Composition** and **Aggregation** represent **"Has-a"** relationships in OOP, but they differ in terms of **ownership** and **object lifecycle**.
 
