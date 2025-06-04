@@ -96,5 +96,12 @@ class MyClass {
 - It **hides the internal state** of an object and **protects it from unauthorized access**.  
 - Achieved using **private variables** and **public getter/setter methods**.
 
+# Benefits of Encapsulation
+ - Improved security: Direct access to data is restricted
 
+- Flexibility: You can change the internal implementation without affecting other classes
+
+- Validation: You can validate data before modifying the fields
+
+- Code Maintainability: Easier to update and maintain
 
