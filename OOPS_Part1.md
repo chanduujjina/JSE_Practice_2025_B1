@@ -95,6 +95,8 @@ class MyClass {
 - **Encapsulation** binds data and methods together.  
 - It **hides the internal state** of an object and **protects it from unauthorized access**.  
 - Achieved using **private variables** and **public getter/setter methods**.
+  
+<img src="Encapsulation.jpg" alt="Flowers in Chania">
 
 # Benefits of Encapsulation
  - Improved security: Direct access to data is restricted
