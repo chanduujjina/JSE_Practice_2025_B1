@@ -206,7 +206,7 @@ class Employee extends Person {
 ```
 
 3. this() or super() must be the first statement in the constructor
-```
+```java
 class A {
     A() {
         this(10); // ✅ Must be first
@@ -215,6 +215,14 @@ class A {
 
     A(int x) {
         System.out.println("Value: " + x);
+    }
+}
+```
+4. You cannot use both this() and super() in the same constructor
+ ```java
+class B extends A {
+    B() {
+        // this(); ❌ and super(); ❌ Cannot use both
     }
 }
 ```
