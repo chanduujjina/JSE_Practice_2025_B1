@@ -117,13 +117,12 @@ Hierarchical Inheritance is a type of inheritance in which **multiple subclasses
 
 In simple terms, **one parent, many children**.
 
-<img src="Hierarchical-Inheritance-in-Java.jpg" alt="Flowers in Chania">
-
----
 
 ## 🔹 Diagram Representation
 
+<img src="Hierarchical-Inheritance-in-Java.jpg-3.jpg" alt="Flowers in Chania">
 
+---
 
 ---
 
