@@ -1,7 +1,13 @@
+## 💎 Hybrid Inheritance – Diamond Problem
+
 ```mermaid
 graph TD;
-    A<--B;
-    A<--C;
-    B<--D;
-    C<--D;
-```
+    A[Class A]
+    B[Class B]
+    C[Class C]
+    D[Class D]
+    A <-- B
+    A <-- C
+    B <-- D
+    C <-- D
+
