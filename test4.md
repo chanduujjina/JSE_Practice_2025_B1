@@ -1,8 +1,8 @@
 ```mermaid
 sequenceDiagram
-    Unstaged->>Unstaged: Hello Bob, how are you?
-    Staged-->>Staged: I am good, thanks!
-    Unstaged->>Unstaged: Are you coming to the party?
-    Staged-->>Staged: Yes, see you there!
+    Unstaged->>Staged: Hello Bob, how are you?
+    Staged-->>Unstaged: I am good, thanks!
+    Unstaged->>Staged: Are you coming to the party?
+    Staged-->>Unstaged: Yes, see you there!
 
 
