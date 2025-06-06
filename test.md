@@ -22,5 +22,5 @@ classDiagram
         +drive()
         -engine : Engine
     }
-    Car *-- Engine
+    Car --* Engine
 
