@@ -151,5 +151,12 @@ class Car {
 }
 ```
 
+🧱 Constructor Rules
+- Must match class name.
 
+- Cannot be abstract, static, final, or synchronized.
+
+- Can use this() to call another constructor in the same class.
+
+- Can use super() to call the parent class constructor.
 
