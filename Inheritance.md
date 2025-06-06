@@ -2,6 +2,8 @@
 
 Inheritance is a fundamental concept in Object-Oriented Programming (OOP). It allows one class (child/subclass) to **inherit** properties and behaviors (fields and methods) from another class (parent/superclass).
 
+<img src="java-data-types.png" alt="Flowers in Chania">
+
 ---
 
 ## 🎯 Purpose of Inheritance
