@@ -172,6 +172,7 @@ public class Main {
 
 It aims to leverage the benefits of multiple inheritance types in a structured and organized way.
 
+<img src="Hybrid-Inheritance-in-CPP.jpg" alt="Flowers in Chania">
 ---
 
 ## 🔹 Can Java Support Hybrid Inheritance?
