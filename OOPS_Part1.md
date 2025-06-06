@@ -225,7 +225,7 @@ class B extends A {
         // this(); ❌ and super(); ❌ Cannot use both
     }
 }
-```
+```java
 5. Constructor chaining can be multi-level
 class A {
     A() {
