@@ -91,3 +91,16 @@ public class Test {
 }
 ```
 ---
+🎯 Use Cases
+Natural hierarchies (e.g., Animal → Mammal → Human)
+
+Reusing and extending logic in multiple stages
+
+Creating specialized behaviors progressively
+
+🧠 Key Points
+Promotes reusability and logical class hierarchy
+
+Java supports multilevel inheritance with classes
+
+Avoid overusing deep inheritance chains (can get complex)
