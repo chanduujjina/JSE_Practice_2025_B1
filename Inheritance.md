@@ -59,7 +59,6 @@ C (Child)
 
 Each level inherits properties and methods from the class above it.
 
----
 
 ## 📌 Example
 
@@ -91,4 +90,4 @@ public class Test {
     }
 }
 ```
-
+---
