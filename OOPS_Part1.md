@@ -68,6 +68,7 @@ Comparison with Aggregation and Composition
 | Aggregation  | "Has-a" relationship, whole and part exist independently      | Part can exist without whole    | Whole owns part but part can live independently |
 | Composition  | Strong "Has-a" relationship, whole controls lifecycle of part | Part cannot exist without whole | Whole owns part and controls its lifecycle      |
 
+<img src="UML_Diagram.png" alt="Flowers in Chania">
 ---
 
 # Instance Block in Java
