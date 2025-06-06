@@ -2,8 +2,6 @@
 
 Inheritance is a fundamental concept in Object-Oriented Programming (OOP). It allows one class (child/subclass) to **inherit** properties and behaviors (fields and methods) from another class (parent/superclass).
 
-<img src="Single-inheritance-in-java.jpg" alt="Flowers in Chania">
-
 ---
 
 ## 🎯 Purpose of Inheritance
@@ -17,6 +15,8 @@ Inheritance is a fundamental concept in Object-Oriented Programming (OOP). It al
 # 📘 Single Inheritance in Java
 
 **Single Inheritance** is when a class (subclass/child) inherits from exactly one superclass (parent class). It helps achieve **code reuse** and **method inheritance**.
+
+<img src="Single-inheritance-in-java.jpg" alt="Flowers in Chania">
 
 ---
 
@@ -47,6 +47,8 @@ public class Test {
 # 🏗️ Multilevel Inheritance in Java
 
 **Multilevel Inheritance** is a type of inheritance where a class inherits from a class which itself inherits from another class. This forms a **chain of inheritance**.
+
+<img src="Multilevel-Inheritance-in-Java-1.jpg" alt="Flowers in Chania">
 
 ---
 
@@ -114,6 +116,8 @@ Avoid overusing deep inheritance chains (can get complex)
 Hierarchical Inheritance is a type of inheritance in which **multiple subclasses inherit from a single parent (superclass)**.
 
 In simple terms, **one parent, many children**.
+
+<img src="Hierarchical-Inheritance-in-Java.jpg" alt="Flowers in Chania">
 
 ---
 
