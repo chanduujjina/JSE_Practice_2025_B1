@@ -107,7 +107,7 @@ class MyClass {
 - Validation: You can validate data before modifying the fields
 
 - Code Maintainability: Easier to update and maintain
-
+---
 # 🚀 Java Constructor
 
 A **constructor** is a special method used to initialize objects in Java.
