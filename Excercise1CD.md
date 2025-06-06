@@ -7,18 +7,19 @@ Below diagram shows:
 
 ```mermaid
 classDiagram
-    class Animal {
-        +eat()
+    class BaseEmplyee {
+       -name : String
+        -age : int
     }
-    class Dog {
-        +bark()
+    class Permanent {
+        -id : int
     }
-    Animal <|-- Dog
+    BaseEmplyee <|-- Permanent
 
-    class Cat {
-        +bark()
+    class Contract {
+       -ct1: int
     }
-    Animal <|-- Cat
+    BaseEmplyee <|-- Contract
   
 
 
