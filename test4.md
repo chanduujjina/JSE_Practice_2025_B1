@@ -1,14 +1,14 @@
 ```mermaid
 mindmap
-  root((Programming))
-    Languages
-      Java
-      Python
-      JavaScript
-    Concepts
-      OOP
-      Functional
-      Procedural
+  root((Keywords))
+    DataTypes
+      int
+      byte
+      short
+    ControlStatements
+      if
+      else if
+      else
     Tools
       Git
       Docker
