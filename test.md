@@ -3,7 +3,7 @@
 Below diagram shows:
 
 - `Animal <|-- Dog` means Dog **is-a** Animal (inheritance).
-- `Car *-- Engine` means Car **has-a** Engine (composition).
+- `Car --* Engine` means Car **has-a** Engine (composition).
 
 ```mermaid
 classDiagram
