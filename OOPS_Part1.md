@@ -102,6 +102,7 @@ class MyClass {
 ✅ Steps to Achieve Encapsulation in Java
  - Declare class variables as private
  - Provide public getter and setter methods to access and update those variables
+ ```java
    public class BankAccount {
     private String accountHolder;     // private = encapsulated
     private double balance;
