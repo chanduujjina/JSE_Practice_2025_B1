@@ -1,14 +1,9 @@
 ```mermaid
-sequenceDiagram
-    participant Dev as Developer
-    participant WS as Working Directory
-    participant Index as Staging Area
-    participant Repo as Git Repository
+stateDiagram-v2
+    [*] --> ToDo
+    ToDo --> InProgress
+    InProgress --> Done
+    Done --> [*]
 
-    Dev->>WS: Modify files (Unstaged)
-    Dev->>Index: git add (Stage files)
-    Index-->>Dev: Files staged
-    Dev->>Repo: git commit
-    Repo-->>Dev: Commit created
 
 
