@@ -1,9 +1,9 @@
 ```mermaid
 stateDiagram-v2
     [*] --> Instantaiation
-    Instantaiation --> Contructor-will-call
-    Contructor-will-call --> instance-varibles-will-load
-    nstance-varibles-will-load -> GC
+    Instantaiation --> Contructor_will-_all
+    Contructor-will-call --> instance_varibles_will_load
+    nstance_varibles_will_load -> GC
     GC --> [*]
 
 
