@@ -104,3 +104,17 @@ Promotes reusability and logical class hierarchy
 Java supports multilevel inheritance with classes
 
 Avoid overusing deep inheritance chains (can get complex)
+
+# 📘 Hierarchical Inheritance in Java
+
+## 🔹 What is Hierarchical Inheritance?
+
+Hierarchical Inheritance is a type of inheritance in which **multiple subclasses inherit from a single parent (superclass)**.
+
+In simple terms, **one parent, many children**.
+
+---
+
+## 🔹 Diagram Representation
+
+
