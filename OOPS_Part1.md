@@ -160,3 +160,60 @@ class Car {
 
 - Can use super() to call the parent class constructor.
 
+🧠 Constructor vs Method
+| Feature     | Constructor            | Method                  |
+| ----------- | ---------------------- | ----------------------- |
+| Name        | Same as class          | Any name                |
+| Return Type | No return type allowed | Must have a return type |
+| Called By   | Object creation        | Method call             |
+
+# 🔁 Constructor Chaining in Java
+
+**Constructor Chaining** is the process of calling one constructor from another within the same class or from a parent class.
+
+---
+
+## ✅ Rules for Constructor Chaining
+
+### 1. Use `this()` to call another constructor in the **same class**
+
+```java
+class Student {
+    Student() {
+        this("Unknown");
+        System.out.println("Default constructor");
+    }
+
+    Student(String name) {
+        System.out.println("Name: " + name);
+    }
+}
+```
+2. Use super() to call the superclass constructor
+class Person {
+    Person() {
+        System.out.println("Person constructor");
+    }
+}
+
+class Employee extends Person {
+    Employee() {
+        super();
+        System.out.println("Employee constructor");
+    }
+}
+```
+
+3. this() or super() must be the first statement in the constructor
+```
+class A {
+    A() {
+        this(10); // ✅ Must be first
+        // System.out.println("Hello"); ❌ Invalid before this()
+    }
+
+    A(int x) {
+        System.out.println("Value: " + x);
+    }
+}
+```
