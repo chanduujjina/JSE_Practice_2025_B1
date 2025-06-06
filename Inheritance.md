@@ -159,6 +159,66 @@ public class Main {
     }
 }
 ```
+# 📘 Hybrid Inheritance in Java
+
+## 🔹 What is Hybrid Inheritance?
+
+**Hybrid Inheritance** is a combination of two or more types of inheritance such as:
+
+- Single Inheritance
+- Multiple Inheritance
+- Multilevel Inheritance
+- Hierarchical Inheritance
+
+It aims to leverage the benefits of multiple inheritance types in a structured and organized way.
+
+---
+
+## 🔹 Can Java Support Hybrid Inheritance?
+
+Java does **not support hybrid inheritance through classes** because it doesn't allow **multiple inheritance** with classes to avoid the **diamond problem**.
+
+✅ However, **hybrid inheritance is possible in Java** using **interfaces**, since a class can implement multiple interfaces.
+
+---
+
+## 🔹 Example of Hybrid Inheritance Using Interfaces
+
+```java
+interface A {
+    void show();
+}
+
+interface B {
+    void display();
+}
+
+class C {
+    void print() {
+        System.out.println("Class C: Base class method.");
+    }
+}
+
+class D extends C implements A, B {
+    public void show() {
+        System.out.println("Interface A: show() method.");
+    }
+
+    public void display() {
+        System.out.println("Interface B: display() method.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        D obj = new D();
+        obj.print();    // From Class C
+        obj.show();     // From Interface A
+        obj.display();  // From Interface B
+    }
+}
+```
+
 ## 🔹 Key Points
 - Promotes code reuse by placing common functionality in the parent class.
 
