@@ -1,25 +1,15 @@
-# Java Relationships
-
-Below diagram shows:
-
-- `Animal <|-- Dog` means Dog **is-a** Animal (inheritance).
-
-
 ```mermaid
 classDiagram
-    class BaseEmplyee {
-       -name : String
+    class Person {
+        -name : String
         -age : int
+        +getName() : String
+        +setName(name : String) : void
     }
-    class Permanent {
-        -id : int
+
+    class Student {
+        -studentId : int
+        +getStudentId() : int
     }
-    BaseEmplyee <|-- Permanent
 
-    class Contract {
-       -ct1: int
-    }
-    BaseEmplyee <|-- Contract
-  
-
-
+    Person <|-- Student
