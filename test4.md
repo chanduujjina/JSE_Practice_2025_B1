@@ -1,9 +1,19 @@
 ```mermaid
-stateDiagram-v2
-    [*] --> ToDo
-    ToDo --> InProgress
-    InProgress --> Done
-    Done --> [*]
+mindmap
+  root((Programming))
+    Languages
+      Java
+      Python
+      JavaScript
+    Concepts
+      OOP
+      Functional
+      Procedural
+    Tools
+      Git
+      Docker
+      VSCode
+
 
 
 
