@@ -1,15 +1,26 @@
 ```mermaid
 classDiagram
-    class Person {
+    class BaseEmployee {
         -name : String
         -age : int
-        +getName() : String
-        +setName(name : String) : void
+        -gender:String
     }
 
-    class Student {
-        -studentId : int
-        +getStudentId() : int
+    class PermamentEmployee {
+        -doj : String
+         -salary: Double
     }
 
-    Person <|-- Student
+    BaseEmployee <|-- PermamentEmployee
+
+    class ContractEmployee {
+        -payRollCompany : String
+         -contractEndDate: Double
+    }
+    BaseEmployee <|-- ContractEmployee
+
+   class InternEmployee {
+        -collegeName : String
+         -lastDate: String
+    }
+    BaseEmployee <|-- InternEmployee
