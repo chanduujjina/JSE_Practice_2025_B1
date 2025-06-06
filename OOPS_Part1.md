@@ -190,6 +190,7 @@ class Student {
 }
 ```
 2. Use super() to call the superclass constructor
+```
 class Person {
     Person() {
         System.out.println("Person constructor");
