@@ -9,7 +9,7 @@ classDiagram
     }
     Animal <|-- Dog   %% Dog **is-a** Animal
 
-    %% "has-a" relationship (Composition/Aggregation)
+    %% "has-a" relationship (Composition)
     class Engine {
         +start()
     }
@@ -18,4 +18,3 @@ classDiagram
         -engine : Engine
     }
     Car *-- Engine   %% Car **has-a** Engine (composition)
-```
