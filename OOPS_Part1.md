@@ -226,3 +226,33 @@ class B extends A {
     }
 }
 ```
+5. Constructor chaining can be multi-level
+class A {
+    A() {
+        System.out.println("A constructor");
+    }
+}
+
+class B extends A {
+    B() {
+        super();
+        System.out.println("B constructor");
+    }
+}
+
+class C extends B {
+    C() {
+        super();
+        System.out.println("C constructor");
+    }
+}
+```
+
+📌 Summary Table
+| Keyword   | Purpose                          | Used In              |
+| --------- | -------------------------------- | -------------------- |
+| `this()`  | Call constructor in same class   | First statement only |
+| `super()` | Call constructor in parent class | First statement only |
+| ❌ Both    | Cannot be used together          |                      |
+
+
