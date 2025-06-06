@@ -1,8 +1,8 @@
 ```mermaid
 stateDiagram-v2
     [*] --> Object
-    ToDo --> State create
-    InProgress --> State Update
+    ToDo --> Statecreate
+    InProgress --> StateUpdate
     Done --> [*]
 
 
