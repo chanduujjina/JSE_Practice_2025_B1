@@ -161,4 +161,9 @@ public class Main {
 
 - Keeps the structure simple and modular.
 
+## 🔹 Advantages
+- ✅ Reduces code duplication
+- ✅ Easy to maintain and update
+- ✅ Encourages logical class grouping
+
 
