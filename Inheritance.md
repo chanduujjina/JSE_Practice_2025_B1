@@ -166,4 +166,6 @@ public class Main {
 - ✅ Easy to maintain and update
 - ✅ Encourages logical class grouping
 
-
+## 🔹 Limitations
+- Does not support multiple inheritance directly (a class can only extend one parent class).
+- Deep hierarchical chains can lead to complexity.
