@@ -1,8 +1,14 @@
 ```mermaid
 sequenceDiagram
-    Unstaged->>Staged: git add
-    Staged-->>Unstaged: git reset --cached
-    Unstaged->>Staged: Are you coming to the party?
-    Staged-->>Unstaged: Yes, see you there!
+    participant Dev as Developer
+    participant WS as Working Directory
+    participant Index as Staging Area
+    participant Repo as Git Repository
+
+    Dev->>WS: Modify files (Unstaged)
+    Dev->>Index: git add (Stage files)
+    Index-->>Dev: Files staged
+    Dev->>Repo: git commit
+    Repo-->>Dev: Commit created
 
 
