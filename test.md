@@ -1,15 +1,20 @@
+# Java Relationships
+
+Below diagram shows:
+
+- `Animal <|-- Dog` means Dog **is-a** Animal (inheritance).
+- `Car *-- Engine` means Car **has-a** Engine (composition).
+
 ```mermaid
 classDiagram
-    %% "is-a" relationship (Inheritance)
     class Animal {
         +eat()
     }
     class Dog {
         +bark()
     }
-    Animal <|-- Dog   %% Dog **is-a** Animal
+    Animal <|-- Dog
 
-    %% "has-a" relationship (Composition)
     class Engine {
         +start()
     }
@@ -17,4 +22,5 @@ classDiagram
         +drive()
         -engine : Engine
     }
-    Car *-- Engine   %% Car **has-a** Engine (composition)
+    Car *-- Engine
+
