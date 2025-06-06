@@ -105,3 +105,52 @@ class MyClass {
 
 - Code Maintainability: Easier to update and maintain
 
+# 🚀 Java Constructor
+
+A **constructor** is a special method used to initialize objects in Java.
+
+## ✅ Features of Constructor
+
+- Same name as the class.
+- No return type (not even `void`).
+- Automatically called when an object is created.
+
+## 🔰 Types of Constructors
+
+### 1. Default Constructor
+- No parameters.
+- Provided by Java if no constructor is defined.
+
+```java
+class Car {
+    Car() {
+        System.out.println("Default constructor");
+    }
+}
+```
+
+### 2. Parameterized Constructor
+- Accepts arguments to initialize fields.
+```java
+class Car {
+    String model;
+    
+    Car(String m) {
+        model = m;
+    }
+}
+```
+
+🎯 Constructor Overloading
+- Multiple constructors with different parameter lists.
+  ```java
+  class Student {
+    Student() {}
+    Student(String name) {}
+    Student(String name, int age) {}
+}
+
+```
+
+
+
