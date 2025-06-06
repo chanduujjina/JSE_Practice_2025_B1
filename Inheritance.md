@@ -154,7 +154,7 @@ public class Main {
     }
 }
 ```
-🔹 Key Points
+🔹 ### Key Points
 - Promotes code reuse by placing common functionality in the parent class.
 
 - Each subclass can extend or override the behavior of the parent class.
