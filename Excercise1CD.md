@@ -13,9 +13,12 @@ classDiagram
     class Dog {
         +bark()
     }
+    Animal <|-- Dog
+
     class Cat {
         +bark()
     }
+    Animal <|-- Cat
   
 
 
