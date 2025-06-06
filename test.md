@@ -1,13 +1,9 @@
-## 💎 Hybrid Inheritance – Diamond Problem
+Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-    A[Class A]
-    B[Class B]
-    C[Class C]
-    D[Class D]
-    A <-- B
-    A <-- C
-    B <-- D
-    C <-- D
-
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
