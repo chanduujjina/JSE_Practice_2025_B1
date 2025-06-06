@@ -31,7 +31,7 @@ It is a **weak association**, meaning the contained object **can exist independe
 - Helps implement **Modular Design**.
 - Object is typically **passed through a constructor** or **setter method**.
 
----
+
 📊 Aggregation vs Composition
 | Feature              | Aggregation               | Composition              |
 | -------------------- | ------------------------- | ------------------------ |
