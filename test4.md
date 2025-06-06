@@ -2,8 +2,8 @@
 graph TD
     Start --> CheckWeather
     CheckWeather{a > b}
-    CheckWeather -- Yes --> Print A
-    CheckWeather -- No --> Print B
-    Print A --> End
-    Print B --> End
+    CheckWeather -- Yes --> A
+    CheckWeather -- No --> B
+    A --> End
+    B --> End
 
