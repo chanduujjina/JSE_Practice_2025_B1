@@ -1,18 +1,9 @@
 ```mermaid
-mindmap
-  root((Keywords))
-    DataTypes
-      int
-      byte
-      short
-    ControlStatements
-      if
-      else if
-      else
-    Tools
-      Git
-      Docker
-      VSCode
+stateDiagram-v2
+    [*] --> ToDo
+    ToDo --> InProgress
+    InProgress --> Done
+    Done --> [*]
 
 
 
