@@ -1,9 +1,9 @@
 ```mermaid
 stateDiagram-v2
-    [*] --> Object
-    ToDo --> Statecreate
-    InProgress --> StateUpdate
-    Done --> [*]
+    [*] --> Instantaiation
+    Instantaiation --> Contructor
+    Contructor --> LoadInstance
+    LoadInstance --> [*]
 
 
 
