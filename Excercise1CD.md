@@ -9,6 +9,7 @@ classDiagram
     class PermamentEmployee {
         -doj : String
          -salary: Double
+         +getSalary()
     }
 
     BaseEmployee <|-- PermamentEmployee
