@@ -11,7 +11,7 @@ mindmap
       Method Calls
     MetaSpace
       Method Code
-      Static Varible
+      Static Variables
       Static Block
 
 
