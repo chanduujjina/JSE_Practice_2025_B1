@@ -17,7 +17,7 @@ graph TD;
     
 ```
 
-## Hierrarchical  Ineheritance
+## Hierarchical  Ineheritance
 
 ```mermaid
 graph TD;
