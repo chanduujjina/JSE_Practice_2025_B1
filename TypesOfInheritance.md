@@ -40,7 +40,7 @@ graph TD;
     GrandParent-->|is-a|Parent1;
     GrandParent-->|is-a|Parent2;
     Parent1-->|is-a|Child
-    Child1-->|is-a|SubChild
+    Child-->|is-a|SubChild
     
 ```
 
