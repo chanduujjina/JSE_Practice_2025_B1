@@ -37,10 +37,10 @@ graph TD;
 ### Diamond Problem
 ```mermaid
 graph TD;
-    A-->|is-a|B;
-    A-->|is-a|C;
-    B-->|is-a|D
-    C-->|is-a|D
+    GrandParent-->|is-a|Parent1;
+    GrandParent-->|is-a|Parent2;
+    Parent1-->|is-a|Child
+    Child1-->|is-a|SubChild
     
 ```
 
