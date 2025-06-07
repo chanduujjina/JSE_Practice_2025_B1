@@ -33,3 +33,14 @@ graph TD;
     B-->D
     
 ```
+## Multiple Inheritance
+### Diamond Problem
+```mermaid
+graph TD;
+    A-->B;
+    B-->C
+    A-->C
+    
+```
+
+
