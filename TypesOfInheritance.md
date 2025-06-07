@@ -12,8 +12,8 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A-->|is-a|B;
-    B-->C
+    GrandParent-->|is-a|Parent;
+    Parent-->|is-a|Child
     
 ```
 
