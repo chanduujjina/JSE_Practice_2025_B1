@@ -3,16 +3,16 @@ mindmap
   root((Storage))
     Heap
       Objects
-      instanceVaribles
+      Instance Varibles
       
     Stack
-      localVariables
+      Local Variables
       
-      methodcalls
+      Method Calls
     MetaSpace
-      methodcode
-      static varible
-      static block
+      Method Code
+      Static Varible
+      Static Block
 
 
 
