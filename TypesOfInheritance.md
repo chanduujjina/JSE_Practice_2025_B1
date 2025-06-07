@@ -4,7 +4,7 @@
 
 ```mermaid
 graph TD;
-    A-->||is-a||B
+    A-->|is-a|B
     
 ```
 
