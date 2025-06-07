@@ -12,7 +12,7 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A-->B;
+    A-->|is-a|B;
     B-->C
     
 ```
@@ -21,26 +21,26 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C
+    A-->|is-a|B;
+    A-->|is-a|C
     
 ```
 ## Hybrid  Ineheritance
 ```mermaid
 graph TD;
-    A-->B;
-    B-->C
-    B-->D
+    A-->|is-a|B;
+    B-->|is-a|C
+    B-->|is-a|D
     
 ```
 ## Multiple Inheritance
 ### Diamond Problem
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D
-    C-->D
+    A-->|is-a|B;
+    A-->|is-a|C;
+    B-->|is-a|D
+    C-->|is-a|D
     
 ```
 
