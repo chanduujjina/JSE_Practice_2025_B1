@@ -1,7 +1,7 @@
-###Inheritance
+### Inheritance
 
- ##Single Ineheritance
-
+ ## Single Ineheritance
+----
 ```mermaid
 graph TD;
     A-->B
