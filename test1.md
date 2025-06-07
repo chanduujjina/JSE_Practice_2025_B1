@@ -16,3 +16,12 @@ graph TD;
     B-->C
     
 ```
+
+## Hierrarchical  Ineheritance
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C
+    
+```
