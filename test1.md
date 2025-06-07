@@ -1,6 +1,6 @@
 ###Inheritance
 
-##Single Ineheritance
+ ##Single Ineheritance
 
 ```mermaid
 graph TD;
