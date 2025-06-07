@@ -1,18 +1,18 @@
 ```mermaid
 mindmap
-  root((Programming))
-    Languages
-      Java
-      Python
-      JavaScript
-    Concepts
-      OOP
-      Functional
-      Procedural
-    Tools
-      Git
-      Docker
-      VSCode
+  root((Storage))
+    Heap
+      Objects
+      instanceVaribles
+      
+    Stack
+      localVariables
+      
+      methodcalls
+    MetaSpace
+      methodcode
+      static varible
+      static block
 
 
 
