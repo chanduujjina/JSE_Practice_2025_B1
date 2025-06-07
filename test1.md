@@ -39,7 +39,7 @@ graph TD;
 graph TD;
     A-->B;
     B-->C
-    A-->C
+    B-->D
     
 ```
 
