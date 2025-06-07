@@ -25,3 +25,11 @@ graph TD;
     A-->C
     
 ```
+## Hybrid  Ineheritance
+```mermaid
+graph TD;
+    A-->B;
+    B-->C
+    B-->D
+    
+```
