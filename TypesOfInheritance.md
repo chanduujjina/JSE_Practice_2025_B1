@@ -21,16 +21,16 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A-->|is-a|B;
-    A-->|is-a|C
+    Parent-->|is-a|Child1;
+    Parent-->|is-a|Child2
     
 ```
 ## Hybrid  Ineheritance
 ```mermaid
 graph TD;
-    A-->|is-a|B;
-    B-->|is-a|C
-    B-->|is-a|D
+    GrandParent-->|is-a|Parent;
+    Parent-->|is-a|Child1
+    Parent-->|is-a|Child2
     
 ```
 ## Multiple Inheritance
