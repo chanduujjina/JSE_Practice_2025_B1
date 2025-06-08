@@ -1,26 +1,24 @@
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hyderabad City Boundary"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [78.4012, 17.3850],
-            [78.4012, 17.3033],
-            [78.4917, 17.3033],
-            [78.4917, 17.3850],
-            [78.4012, 17.3850]
-          ]
-        ]
-      }
+```mermaid
+classDiagram
+    class Library {
+        -books: List~Book~
+        +addBook(book: Book)
+        +removeBook(bookId: int)
     }
-  ]
-}
 
-```
+    class Book {
+        -id: int
+        -title: String
+        -author: String
+        -isAvailable: boolean
+    }
+
+    class Member {
+        -memberId: int
+        -name: String
+        +borrowBook(book: Book)
+        +returnBook(book: Book)
+    }
+
+    Library "1" o-- "*" Book
+    Member "1" --> "*" Book : borrows
