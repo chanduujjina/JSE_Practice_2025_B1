@@ -17,7 +17,7 @@ Test test = new Test();
 stateDiagram-v2
     [*] --> Instantiating
     Instantiating --> CallingContructor
-    CallingContructor --> LoadInsinstanceVariable
+    CallingContructor --> LoadInstanceVariable
     LoadInsinstanceVariable --> Instantaited
     Instantaited --> [*]
 ```
