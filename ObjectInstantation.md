@@ -16,8 +16,8 @@ Test test = new Test();
 ```mermaid
 stateDiagram-v2
     [*] --> Instantiating
-    Instantiating --> CallingContructor
-    CallingContructor --> LoadInstanceVariable
+    Instantiating --> CallingConstructor
+    CallingConstructor --> LoadInstanceVariable
     LoadInstanceVariable --> Instantaited
     Instantaited --> [*]
 ```
