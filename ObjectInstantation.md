@@ -3,7 +3,7 @@
 ```mermaid
 stateDiagram-v2
     [*] --> Instantiating
-    Instantiating --> CallingContrtructor
+    Instantiating --> CallingContructor
     CallingContructor --> LoadInsinstanceVariable
     LoadInsinstanceVariable --> Instantaited
     Instantaited --> [*]
