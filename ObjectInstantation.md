@@ -62,4 +62,13 @@ stateDiagram-v2
     Instantaited --> [*]
 ```
 
-
+## Life Cycle of an Class having static varible and static block and static method
+```mermaid
+stateDiagram-v2
+    [*] --> ClassLoading
+    ClassLoading --> LoadStaticVariable
+    LoadStaticVariable --> LoadingStaticBlock
+    LoadingStaticBlock --> CallStaticMethodWhenMethodInvokedUsingClass
+    CallStaticMethodWhenMethodInvokedUsingClass --> ClassLoaded
+    ClassLoaded --> [*]
+```
