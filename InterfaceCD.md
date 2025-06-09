@@ -1,27 +1,28 @@
 ```mermaid
 classDiagram
     class Bank {
-        <<interface>>
-        +getRateOfInterest(): double
+        -String bankName
+        +Bank(String bankName)
+        +String getBankName()
+        +double getRateOfInterest()
+        +double calculateInterest(double principal, double time)
     }
 
     class HDFC {
-        +getRateOfInterest(): double
+        +HDFC()
+        +double getRateOfInterest()
     }
 
     class SBI {
-        +getRateOfInterest(): double
+        +SBI()
+        +double getRateOfInterest()
     }
 
     class ICICI {
-        +getRateOfInterest(): double
+        +ICICI()
+        +double getRateOfInterest()
     }
 
-    class InterestCalculator {
-        +calculateInterest(p: double, r: double, t: double): double
-    }
-
-    Bank <|.. HDFC
-    Bank <|.. SBI
-    Bank <|.. ICICI
-    InterestCalculator --> Bank : uses
+    Bank <|-- HDFC
+    Bank <|-- SBI
+    Bank <|-- ICICI
