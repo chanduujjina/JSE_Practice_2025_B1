@@ -12,7 +12,7 @@ Test test = new Test();
 }
 ```
 
-# Life Cycle of an Object
+## Life Cycle of an Object
 ```mermaid
 stateDiagram-v2
     [*] --> Instantiating
@@ -20,3 +20,5 @@ stateDiagram-v2
     CallingContructor --> LoadInsinstanceVariable
     LoadInsinstanceVariable --> Instantaited
     Instantaited --> [*]
+```
+
