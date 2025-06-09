@@ -18,7 +18,7 @@ stateDiagram-v2
     [*] --> Instantiating
     Instantiating --> CallingContructor
     CallingContructor --> LoadInstanceVariable
-    LoadInsinstanceVariable --> Instantaited
+    LoadInstanceVariable --> Instantaited
     Instantaited --> [*]
 ```
 
