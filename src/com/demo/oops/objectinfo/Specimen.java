@@ -36,7 +36,8 @@ public class Specimen implements Cloneable {
 		
 		@Override
 		 public Object clone() throws CloneNotSupportedException {
-			 return super.clone();
+			//throw new CloneNotSupportedException();
+			return super.clone();
 		 }
 
 }
