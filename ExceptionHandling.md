@@ -33,3 +33,27 @@ try {
 | **3. Graceful Recovery**   | Allows program to recover from errors and continue execution. |
 | **4. Customization**       | You can create custom exceptions.                             |
 | **5. Resource Management** | Ensures cleanup through `finally` or try-with-resources.      |
+
+
+
+📘 Mermaid Class Diagram for Java Exception Hierarchy
+```mermaid
+classDiagram
+    Throwable <|-- Error
+    Throwable <|-- Exception
+
+    Exception <|-- IOException
+    Exception <|-- SQLException
+    Exception <|-- ClassNotFoundException
+    Exception <|-- RuntimeException
+
+    RuntimeException <|-- ArithmeticException
+    RuntimeException <|-- NullPointerException
+    RuntimeException <|-- ArrayIndexOutOfBoundsException
+    RuntimeException <|-- IllegalArgumentException
+
+    IOException <|-- FileNotFoundException
+```
+
+
+
