@@ -56,4 +56,15 @@ classDiagram
 ```
 
 
+---
+
+### 🧠 Notes:
+- **Throwable** is the root class for all exceptions and errors.
+- **Error** represents serious problems that should not be caught (like `OutOfMemoryError`).
+- **Exception** is for conditions that a program might want to catch.
+- **RuntimeException** and its subclasses are **unchecked exceptions**.
+- Others like `IOException`, `SQLException` are **checked exceptions**.
+
+
+
 
