@@ -1,4 +1,4 @@
-# 📘 Composition vs Aggregation in OOP
+ 📘 Composition vs Aggregation in OOP
 
 Both **Composition** and **Aggregation** represent **"Has-a"** relationships in OOP, but they differ in terms of **ownership** and **object lifecycle**.
 
@@ -31,7 +31,7 @@ It is a **weak association**, meaning the contained object **can exist independe
 - Helps implement **Modular Design**.
 - Object is typically **passed through a constructor** or **setter method**.
 
----
+
 📊 Aggregation vs Composition
 | Feature              | Aggregation               | Composition              |
 | -------------------- | ------------------------- | ------------------------ |
@@ -68,6 +68,7 @@ Comparison with Aggregation and Composition
 | Aggregation  | "Has-a" relationship, whole and part exist independently      | Part can exist without whole    | Whole owns part but part can live independently |
 | Composition  | Strong "Has-a" relationship, whole controls lifecycle of part | Part cannot exist without whole | Whole owns part and controls its lifecycle      |
 
+<img src="UML_Diagram.png" alt="Flowers in Chania">
 ---
 
 # Instance Block in Java
@@ -89,6 +90,156 @@ class MyClass {
         System.out.println("Instance block executed");
     }
 }
+```
 
+# 🚀 Java Constructor
+
+A **constructor** is a special method used to initialize objects in Java.
+
+## ✅ Features of Constructor
+
+- Same name as the class.
+- No return type (not even `void`).
+- Automatically called when an object is created.
+
+## 🔰 Types of Constructors
+
+### 1. Default Constructor
+- No parameters.
+- Provided by Java if no constructor is defined.
+
+```java
+class Car {
+    Car() {
+        System.out.println("Default constructor");
+    }
+}
+```
+
+### 2. Parameterized Constructor
+- Accepts arguments to initialize fields.
+```java
+class Car {
+    String model;
+    
+    Car(String m) {
+        model = m;
+    }
+}
+```
+
+🎯 Constructor Overloading
+- Multiple constructors with different parameter lists.
+```java
+  class Student {
+    Student() {}
+    Student(String name) {}
+    Student(String name, int age) {}
+}
+```
+
+🧱 Constructor Rules
+- Must match class name.
+
+- Cannot be abstract, static, final, or synchronized.
+
+- Can use this() to call another constructor in the same class.
+
+- Can use super() to call the parent class constructor.
+
+🧠 Constructor vs Method
+| Feature     | Constructor            | Method                  |
+| ----------- | ---------------------- | ----------------------- |
+| Name        | Same as class          | Any name                |
+| Return Type | No return type allowed | Must have a return type |
+| Called By   | Object creation        | Method call             |
+
+# 🔁 Constructor Chaining in Java
+
+**Constructor Chaining** is the process of calling one constructor from another within the same class or from a parent class.
+
+---
+
+## ✅ Rules for Constructor Chaining
+
+### 1. Use `this()` to call another constructor in the **same class**
+
+```java
+class Student {
+    Student() {
+        this("Unknown");
+        System.out.println("Default constructor");
+    }
+
+    Student(String name) {
+        System.out.println("Name: " + name);
+    }
+}
+```
+2. Use super() to call the superclass constructor
+```
+class Person {
+    Person() {
+        System.out.println("Person constructor");
+    }
+}
+
+class Employee extends Person {
+    Employee() {
+        super();
+        System.out.println("Employee constructor");
+    }
+}
+```
+
+3. this() or super() must be the first statement in the constructor
+```java
+class A {
+    A() {
+        this(10); // ✅ Must be first
+        // System.out.println("Hello"); ❌ Invalid before this()
+    }
+
+    A(int x) {
+        System.out.println("Value: " + x);
+    }
+}
+```
+4. You cannot use both this() and super() in the same constructor
+ ```java
+class B extends A {
+    B() {
+        // this(); ❌ and super(); ❌ Cannot use both
+    }
+}
+```java
+5. Constructor chaining can be multi-level
+class A {
+    A() {
+        System.out.println("A constructor");
+    }
+}
+
+class B extends A {
+    B() {
+        super();
+        System.out.println("B constructor");
+    }
+}
+
+class C extends B {
+    C() {
+        super();
+        System.out.println("C constructor");
+    }
+}
+```
+
+📌 Summary Table
+| Keyword   | Purpose                          | Used In              |
+| --------- | -------------------------------- | -------------------- |
+| `this()`  | Call constructor in same class   | First statement only |
+| `super()` | Call constructor in parent class | First statement only |
+| ❌ Both    | Cannot be used together          |                      |
 
 

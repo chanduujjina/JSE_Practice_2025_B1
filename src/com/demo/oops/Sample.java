@@ -19,6 +19,30 @@ public class Sample {
 		this.sampleName = sampleName;
 	}
 	
+	public int getSampleId() {
+		return sampleId;
+	}
+
+	public void setSampleId(int sampleId) {
+		this.sampleId = sampleId;
+	}
+
+	public String getSampleName() {
+		return sampleName;
+	}
+
+	public void setSampleName(String sampleName) {
+		this.sampleName = sampleName;
+	}
+
+	public String getDescrption() {
+		return descrption;
+	}
+
+	public void setDescrption(String descrption) {
+		this.descrption = descrption;
+	}
+
 	public Sample(int sampleId,String sampleName,String descrption) {
 		this.sampleId =1;
 		this.sampleName = sampleName;
