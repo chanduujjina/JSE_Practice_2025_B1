@@ -27,6 +27,11 @@ public class Sample {
 		this.sampleId = sampleId;
 	}
 
+	@Override
+	public String toString() {
+		return "Sample [sampleId=" + sampleId + ", sampleName=" + sampleName + "]";
+	}
+
 	public String getSampleName() {
 		return sampleName;
 	}
