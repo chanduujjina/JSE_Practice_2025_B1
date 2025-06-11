@@ -23,3 +23,13 @@ try {
 } finally {
     // code that always executes (optional)
 }
+```
+
+🎯 Advantages of Exception Handling
+| Advantage                  | Description                                                   |
+| -------------------------- | ------------------------------------------------------------- |
+| **1. Clean Code**          | Separates error-handling code from regular code.              |
+| **2. Reliability**         | Prevents abrupt termination of programs.                      |
+| **3. Graceful Recovery**   | Allows program to recover from errors and continue execution. |
+| **4. Customization**       | You can create custom exceptions.                             |
+| **5. Resource Management** | Ensures cleanup through `finally` or try-with-resources.      |
