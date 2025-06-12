@@ -89,7 +89,8 @@ flowchart TD
 ```
 
 ✅ Add Nested Try/Catch (Optional Advanced Flowchart)
-``mermaid
+
+```mermaid
 flowchart TD
     A[Start] --> B{Outer try block}
     B --> C{Inner try block}
