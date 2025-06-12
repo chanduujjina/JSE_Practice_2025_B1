@@ -88,7 +88,24 @@ flowchart TD
     H --> F
 ```
 
+✅ Add Nested Try/Catch (Optional Advanced Flowchart)
+``mermaid
+flowchart TD
+    A[Start] --> B{Outer try block}
+    B --> C{Inner try block}
+    C -->|No Exception| D[Inner finally]
+    D --> E[Outer finally]
+    E --> F[End]
 
+    C -->|Inner Exception| G{Inner catch?}
+    G -->|Yes| D
+    G -->|No| H[Propagate to outer catch]
+
+    H --> I{Outer catch?}
+    I -->|Yes| E
+    I -->|No| J[Unhandled Exception]
+    J --> F
+```
 
 
 
