@@ -72,6 +72,21 @@ try {
 
 
 
+✅ Mermaid Flowchart for Java Exception Handling
+```mermaid
+flowchart TD
+    A[Start] --> B{try block}
+    B -->|No Exception| C[Skip catch]
+    C --> E[finally block]
+    E --> F[End]
+
+    B -->|Exception Occurs| D{Matching catch block?}
+    D -->|Yes| G[Execute matching catch block]
+    G --> E
+
+    D -->|No| H[Propagate Exception to Caller]
+    H --> F
+```
 
 
 
