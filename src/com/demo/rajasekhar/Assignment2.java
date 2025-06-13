@@ -13,6 +13,7 @@ public class Assignment2 {
 				a = a/10;
 			}
 			System.out.println(num_sum);
+			
 			// 2.Write a program to find Find Missing Number in Array input : int numberArray = {1,2,4,5}_value
 			int array1 [] = {1,2,4,5};
 			int b = array1[0];
