@@ -1,27 +1,28 @@
 ```mermaid
 flowchart TD
     Start([Start])
-    
-    Start --> CheckEmpty{Are all fields non-empty?}
-    
-    CheckEmpty -- No --> ErrorEmpty[Error: All fields are required]
-    CheckEmpty -- Yes --> ValidateID{ID matches \d+}
-    
-    ValidateID -- No --> ErrorID[Error: Invalid ID]
-    ValidateID -- Yes --> ValidateName{Name matches ^[a-zA-Z]+$}
-    
-    ValidateName -- No --> ErrorName[Error: Invalid Name]
-    ValidateName -- Yes --> ValidateGender{Gender selected}
-    
-    ValidateGender -- No --> ErrorGender[Error: Gender is required]
-    ValidateGender -- Yes --> ValidatePAN{PAN matches A-Z{5}0-9{4}A-Z}
-    
-    ValidatePAN -- No --> ErrorPAN[Error: Invalid PAN]
-    ValidatePAN -- Yes --> ValidateAadhar{Aadhar matches 2-9 followed by 11 digits}
-    
-    ValidateAadhar -- No --> ErrorAadhar[Error: Invalid Aadhar]
-    ValidateAadhar -- Yes --> ValidatePhone{Phone matches 10 digits}
-    
-    ValidatePhone -- No --> ErrorPhone[Error: Invalid Phone]
-    ValidatePhone -- Yes --> Success([Validation Successful])
+
+    Start --> CheckEmpty{All fields filled?}
+
+    CheckEmpty -- No --> ErrorEmpty[Error: Missing fields]
+    CheckEmpty -- Yes --> CheckID{ID is numeric}
+
+    CheckID -- No --> ErrorID[Error: Invalid ID]
+    CheckID -- Yes --> CheckName{Name has only letters}
+
+    CheckName -- No --> ErrorName[Error: Invalid Name]
+    CheckName -- Yes --> CheckGender{Gender selected?}
+
+    CheckGender -- No --> ErrorGender[Error: Gender required]
+    CheckGender -- Yes --> CheckPAN{PAN format valid?}
+
+    CheckPAN -- No --> ErrorPAN[Error: Invalid PAN]
+    CheckPAN -- Yes --> CheckAadhar{Aadhar format valid?}
+
+    CheckAadhar -- No --> ErrorAadhar[Error: Invalid Aadhar]
+    CheckAadhar -- Yes --> CheckPhone{Phone number valid?}
+
+    CheckPhone -- No --> ErrorPhone[Error: Invalid Phone]
+    CheckPhone -- Yes --> Success([Validation Successful])
+
 ```
