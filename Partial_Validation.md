@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Start] --> B[Enter Username and Password]
     B --> C{Are credentials valid?}
@@ -7,3 +8,4 @@ flowchart TD
     F --> B
     D --> G[Redirect to Dashboard]
     G --> H[End]
+```
