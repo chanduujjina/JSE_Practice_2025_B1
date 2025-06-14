@@ -1,4 +1,3 @@
-``` mermaid
 classDiagram
     class LoginHandler {
         +void startLogin()
@@ -16,4 +15,4 @@ classDiagram
 
     LoginHandler --> Validator : uses
     LoginHandler --> ErrorHandler : on failure
-```
+
