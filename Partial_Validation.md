@@ -6,6 +6,5 @@ flowchart TD
     C -- No --> E[Show Error Message]
     E --> F[Retry Login]
     F --> B
-    D --> G[Redirect to Dashboard]
-    G --> H[End]
+   
 ```
