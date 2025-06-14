@@ -4,25 +4,24 @@ flowchart TD
     
     Start --> CheckEmpty{Are all fields non-empty?}
     
-    CheckEmpty -- No --> ErrorEmpty[Display Error: "All fields are required"]
-    CheckEmpty -- Yes --> ValidateID{ID matches \d+?}
+    CheckEmpty -- No --> ErrorEmpty[Error: All fields are required]
+    CheckEmpty -- Yes --> ValidateID{ID matches \d+}
     
-    ValidateID -- No --> ErrorID[Display Error: "Invalid ID"]
-    ValidateID -- Yes --> ValidateName{Name matches ^[a-zA-Z]+$?}
+    ValidateID -- No --> ErrorID[Error: Invalid ID]
+    ValidateID -- Yes --> ValidateName{Name matches ^[a-zA-Z]+$}
     
-    ValidateName -- No --> ErrorName[Display Error: "Invalid Name"]
-    ValidateName -- Yes --> ValidateGender{Gender selected?}
+    ValidateName -- No --> ErrorName[Error: Invalid Name]
+    ValidateName -- Yes --> ValidateGender{Gender selected}
     
-    ValidateGender -- No --> ErrorGender[Display Error: "Gender is required"]
-    ValidateGender -- Yes --> ValidatePAN{PAN matches ^[A-Z]{5}[0-9]{4}[A-Z]$?}
+    ValidateGender -- No --> ErrorGender[Error: Gender is required]
+    ValidateGender -- Yes --> ValidatePAN{PAN matches A-Z{5}0-9{4}A-Z}
     
-    ValidatePAN -- No --> ErrorPAN[Display Error: "Invalid PAN"]
-    ValidatePAN -- Yes --> ValidateAadhar{Aadhar matches ^[2-9][0-9]{11}$?}
+    ValidatePAN -- No --> ErrorPAN[Error: Invalid PAN]
+    ValidatePAN -- Yes --> ValidateAadhar{Aadhar matches 2-9 followed by 11 digits}
     
-    ValidateAadhar -- No --> ErrorAadhar[Display Error: "Invalid Aadhar"]
-    ValidateAadhar -- Yes --> ValidatePhone{Phone matches \d{10}?}
+    ValidateAadhar -- No --> ErrorAadhar[Error: Invalid Aadhar]
+    ValidateAadhar -- Yes --> ValidatePhone{Phone matches 10 digits}
     
-    ValidatePhone -- No --> ErrorPhone[Display Error: "Invalid Phone"]
+    ValidatePhone -- No --> ErrorPhone[Error: Invalid Phone]
     ValidatePhone -- Yes --> Success([Validation Successful])
-
 ```
