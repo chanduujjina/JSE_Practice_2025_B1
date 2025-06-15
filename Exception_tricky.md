@@ -11,7 +11,7 @@
 | *(no exception)*                  | `RuntimeException` (unchecked)  | ✅ Yes        | Subclass can throw unchecked exceptions freely.                                       |
 
 Overriding method Exception Handling Rules – Summary
-| **Superclass Constructor** Throws | **Subclass Constructor** Throws | **Allowed?** | **Explanation**                                                                       |
+| **Superclass Method** Throws | **Subclass Method** Throws | **Allowed?** | **Explanation**                                                                       |
 | --------------------------------- | ------------------------------- | ------------ | ------------------------------------------------------------------------------------- |
 | `Exception` (checked)             | `IOException` (subclass)        | ✅ Yes        | Subclass can declare a **narrower** checked exception.                                |
 | `IOException`                     | `Exception` (superclass)        | ❌ No         | Subclass **cannot broaden** checked exception.                                        |
