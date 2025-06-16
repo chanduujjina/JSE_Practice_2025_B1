@@ -1,8 +1,7 @@
 ##  Question 1: Method Overloading
 ```java
- Question 1: Method Overloading
-java
-Copy
-Edit
+void m1(long a) { System.out.println("long"); }
+void m1(Integer a) { System.out.println("Integer"); }
 
+m1(10);
 ```
