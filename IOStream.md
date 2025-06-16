@@ -41,3 +41,13 @@ fr.close();
 - Provides helpful methods like readLine() and newLine().
 
 ✅ Use when you need better performance or are dealing with big files.
+
+```java
+BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+String line;
+while ((line = br.readLine()) != null) {
+    System.out.println(line);
+}
+br.close();
+
+```
