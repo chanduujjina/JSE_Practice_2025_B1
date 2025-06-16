@@ -71,4 +71,33 @@ br.close();
 | **Encoding Support** | No automatic encoding handling      | Yes, supports character encoding   |
 | **Superclass**       | `InputStream`                       | `Reader`                           |
 
+🟢 Use FileInputStream for:
+```java
+FileInputStream fis = new FileInputStream("photo.jpg");
+```
+
+🟢 Use FileReader for:
+```java
+FileReader fr = new FileReader("notes.txt");
+```
+
+🔹 FileOutputStream vs FileWriter
+| Feature              | `FileOutputStream`                | `FileWriter`                     |
+| -------------------- | --------------------------------- | -------------------------------- |
+| **Type of Data**     | Writes **binary data** (bytes)    | Writes **character data** (text) |
+| **Use For**          | Images, video, files with symbols | Writing plain text               |
+| **Writes**           | Byte-by-byte                      | Character-by-character           |
+| **Encoding Support** | No                                | Yes                              |
+| **Superclass**       | `OutputStream`                    | `Writer`                         |
+
+
+🟢 Use FileOutputStream for:
+```java
+FileOutputStream fos = new FileOutputStream("output.pdf");
+```
+🟢 Use FileWriter for:
+```java
+FileWriter fw = new FileWriter("output.txt");
+```
+
 
