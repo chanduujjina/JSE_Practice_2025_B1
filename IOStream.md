@@ -99,5 +99,12 @@ FileOutputStream fos = new FileOutputStream("output.pdf");
 ```java
 FileWriter fw = new FileWriter("output.txt");
 ```
+🔹 DataInputStream vs DataOutputStream
+- They are wrapper classes used to read/write Java primitive data types (like int, double, boolean, etc.) in a binary format over streams.
+
+- | Class              | Purpose                                             |
+| ------------------ | --------------------------------------------------- |
+| `DataInputStream`  | Reads **primitive data types** from a binary stream |
+| `DataOutputStream` | Writes **primitive data types** to a binary stream  |
 
 
