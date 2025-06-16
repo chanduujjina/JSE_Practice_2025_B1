@@ -60,3 +60,15 @@ br.close();
 | Methods like `readLine()` | ❌ No                  | ✅ Yes                         |
 | Use Case                  | Small data            | Large files / efficiency      |
 
+
+
+🔹 FileInputStream vs FileReader
+| Feature              | `FileInputStream`                   | `FileReader`                       |
+| -------------------- | ----------------------------------- | ---------------------------------- |
+| **Type of Data**     | Reads **binary data** (bytes)       | Reads **character data** (text)    |
+| **Use For**          | Images, audio, PDF, etc. (non-text) | Text files (e.g., `.txt`, `.java`) |
+| **Reads**            | Byte-by-byte (`int`, `byte[]`)      | Character-by-character (`char`)    |
+| **Encoding Support** | No automatic encoding handling      | Yes, supports character encoding   |
+| **Superclass**       | `InputStream`                       | `Reader`                           |
+
+
