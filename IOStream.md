@@ -29,3 +29,15 @@ while ((ch = fr.read()) != -1) {
 fr.close();
 
 ```
+
+
+🔸 2. BufferedReader / BufferedWriter
+- Wraps around FileReader/FileWriter.
+
+- Reads/writes chunks of characters (uses an internal buffer).
+
+- Much faster and efficient, especially for large files.
+
+- Provides helpful methods like readLine() and newLine().
+
+✅ Use when you need better performance or are dealing with big files.
