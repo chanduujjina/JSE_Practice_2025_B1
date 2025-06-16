@@ -51,3 +51,12 @@ while ((line = br.readLine()) != null) {
 br.close();
 
 ```
+
+🔹 Summary Table
+| Feature                   | FileReader/FileWriter | BufferedReader/BufferedWriter |
+| ------------------------- | --------------------- | ----------------------------- |
+| Buffering                 | ❌ No                  | ✅ Yes (internal buffer)       |
+| Performance               | Slower                | Faster                        |
+| Methods like `readLine()` | ❌ No                  | ✅ Yes                         |
+| Use Case                  | Small data            | Large files / efficiency      |
+
