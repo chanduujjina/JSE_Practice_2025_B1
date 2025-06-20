@@ -8,13 +8,13 @@ public class EnDemo3 {
 	}
 }
 
-public Student1{
+/*public Student1{
 	private int id;
 	private String Name;
 	public void setid(int id) {
 		this.id=id;
 	}
 }
-
+*/
 
 
