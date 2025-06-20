@@ -4,29 +4,18 @@ public class StringDemo5 {
 	
 	public static void main(String[] args) {
 		
-		String name  = "Sudhakar";
+		String name  = "Chandu";
 		
-		char ch1 = name.charAt(0);//method call
+		char[] charArray = name.toCharArray();
 		
-		System.out.println("ch1:"+ch1);
-		
-		
-		int index1 = name.indexOf('c');
-		
-		System.out.println("Not existing index value:"+index1);
+		for (char ch : charArray) {
+			System.out.println(ch);
+		}
 		
 		
-       int index2 = name.indexOf('n');
 		
-		System.out.println("existing char index value:"+index2);
 		
-		 int index3 = name.indexOf('a');//index of always give the index for first occurance of the charcter
-		 
-		 System.out.println("first ocuurance for index method");
-		 
-		 int lastIndexOf = name.lastIndexOf('a');
-		 
-		 System.out.println("last ocuurance of char a:"+lastIndexOf);
+		
 		
 	}
 
