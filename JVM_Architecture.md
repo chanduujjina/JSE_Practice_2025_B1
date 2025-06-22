@@ -1,3 +1,4 @@
+```mermaid
 flowchart TB
     A[Java Source Code (.java)] --> B[Javac Compiler]
     B --> C[Bytecode (.class)]
@@ -40,3 +41,4 @@ flowchart TB
     D3 --> D3a
     D3 --> D3b
     D3 --> D3c
+```
