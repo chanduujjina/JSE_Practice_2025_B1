@@ -13,7 +13,6 @@ public static String readEncodeDataFromFile(String path) {
 		
 		try (FileInputStream fileInputStream = new FileInputStream(path)) {
 			byte[] readAllBytes = fileInputStream.readAllBytes();
-			System.out.println("reading file sucessfully");
 			return Base64.getEncoder().encodeToString(readAllBytes);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -22,5 +21,6 @@ public static String readEncodeDataFromFile(String path) {
 		return null;
 		
 	}
+	
 
 }
