@@ -22,9 +22,9 @@ public class Demo1 {
 		
 		String value = "example";
 		
-		int indexOf = value.indexOf("e", 1,value.length());
+		//int indexOf = value.indexOf("e", 1,value.length());
 		
-		System.out.println(indexOf);
+		//System.out.println(indexOf);
 		
 		
 		
