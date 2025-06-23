@@ -20,9 +20,7 @@ public class ArrayDemo1 {
 				int lastVal = numberArray[numberArray.length-1];//8
 				System.out.println("lastVal:"+lastVal);
 		
-		//get the value of index that is >=length
-		int moreThanSizeVal = numberArray[numberArray.length];//ArrayIndexOutOfBoundException
-		System.out.println("moreThanSizeVal:"+moreThanSizeVal);
+		
 		
 	}
 

@@ -23,6 +23,12 @@ public class Car {
 	public String toString() {
 		return "Car [engine=" + engine + ", wheel=" + wheel + ", carName=" + carName + "]";
 	}
+
+
+	public void carhas() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

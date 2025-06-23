@@ -19,7 +19,7 @@ public class TwoDimensionaArrayDynamicFrom {
 	}
 
 	/**
-	 * @param numberArray
+	 * @param
 	 */
 	private static void printArray(int[][] numberArray) {
 		for (int i = 0;i<numberArray.length;i++) {
