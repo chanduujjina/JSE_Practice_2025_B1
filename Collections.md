@@ -1,4 +1,4 @@
-🧠 Java Collections
+# 🧠 Java Collections
 
  ## 1. Introduction
    - What is the Collection framework?
@@ -26,3 +26,4 @@
     - Map (interface)
 
       - HashMap, LinkedHashMap, TreeMap, Hashtable
+## 3. List Interface
