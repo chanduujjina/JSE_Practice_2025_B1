@@ -27,3 +27,11 @@
 
       - HashMap, LinkedHashMap, TreeMap, Hashtable
 ## 3. List Interface
+
+| Class        | Features                                     |
+| ------------ | -------------------------------------------- |
+| `ArrayList`  | Dynamic array, fast read, slow insert/delete |
+| `LinkedList` | Doubly linked list, good at insert/delete    |
+| `Vector`     | Synchronized version of ArrayList            |
+| `Stack`      | LIFO structure, legacy class                 |
+
