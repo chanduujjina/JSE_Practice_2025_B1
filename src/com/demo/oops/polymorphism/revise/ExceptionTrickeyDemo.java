@@ -1,17 +1,19 @@
 package com.demo.oops.polymorphism.revise;
 
+import java.io.IOException;
+
 public class ExceptionTrickeyDemo {
 
 }
 
 class Parent {
-	public void m1() throws Exception{
+	public void m1() throws IOException{
 		
 	}
 }
 
 class Child extends Parent {
-    public void m1() throws ArithmeticException {
+    public void m1()  {
 		
 	}
 }
