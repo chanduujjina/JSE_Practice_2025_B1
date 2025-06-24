@@ -2,6 +2,7 @@
 
  ## 1. Introduction
    - What is the Collection framework?
+      - The Collection Framework is a part of java.util package that provides predefined interfaces and classes to work with groups of objects like lists, sets,    maps, queues, etc.
 
    - Need for collections over arrays.
 
