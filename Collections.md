@@ -35,3 +35,22 @@
 | `Vector`     | Synchronized version of ArrayList            |
 | `Stack`      | LIFO structure, legacy class                 |
 
+
+## 4. Set Interface
+
+| Class           | Features                  |
+| --------------- | ------------------------- |
+| `HashSet`       | No duplicates, unordered  |
+| `LinkedHashSet` | Maintains insertion order |
+| `TreeSet`       | Sorted set, no duplicates |
+
+## 5. Queue Interface
+| Class           | Features                    |
+| --------------- | --------------------------- |
+| `PriorityQueue` | Orders elements by priority |
+| `ArrayDeque`    | Double-ended queue          |
+
+
+
+
+
