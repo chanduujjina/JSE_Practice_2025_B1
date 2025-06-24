@@ -1,10 +1,11 @@
 🧠 Java Collections
-🔹 1. Introduction
-- What is the Collection framework?
 
-- Need for collections over arrays.
+ 🔹 1. Introduction
+    - What is the Collection framework?
 
-- Interfaces vs classes in Collection API.
+     - Need for collections over arrays.
+
+     - Interfaces vs classes in Collection API.
 
 
 🔹 2. Hierarchy Diagram
