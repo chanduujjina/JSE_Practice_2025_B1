@@ -8,12 +8,12 @@
    - Interfaces vs classes in Collection API.
 
 
-🔹 2. Hierarchy Diagram
-Collection (interface)
+## 2. Hierarchy Diagram
+- Collection (interface)
 
-List
+-- List
 
-ArrayList, LinkedList, Vector, Stack
+--- ArrayList, LinkedList, Vector, Stack
 
 Set
 
