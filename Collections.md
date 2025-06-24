@@ -11,7 +11,7 @@
 ## 2. Hierarchy Diagram
 - Collection (interface)
 
--- List
+   - List
 
 --- ArrayList, LinkedList, Vector, Stack
 
