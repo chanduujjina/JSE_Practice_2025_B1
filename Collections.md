@@ -23,6 +23,6 @@
 
      - PriorityQueue, ArrayDeque
 
-Map (interface)
+    - Map (interface)
 
-HashMap, LinkedHashMap, TreeMap, Hashtable
+      - HashMap, LinkedHashMap, TreeMap, Hashtable
