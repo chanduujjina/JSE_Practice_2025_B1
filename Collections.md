@@ -6,7 +6,7 @@
 
    - Need for collections over arrays ?
    -  Limitations of Arrays
-            | Feature                          | Array                                                                               |
+|  Feature                          | Array                                                                               |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | **Fixed Size**                   | Size is fixed during declaration and cannot grow dynamically                        |
 | **Homogeneous Elements**         | Can only store elements of one data type                                            |
