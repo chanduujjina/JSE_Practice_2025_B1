@@ -1,4 +1,4 @@
-mindmap
+```mindmap
   root((Java Keywords))
   
     Control Statements
@@ -88,3 +88,4 @@ mindmap
       strictfp
       const [reserved]
       goto [reserved]
+```
