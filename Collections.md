@@ -4,7 +4,16 @@
    - What is the Collection framework?
       - The Collection Framework is a part of java.util package that provides predefined interfaces and classes to work with groups of objects like lists, sets,    maps, queues, etc.
 
-   - Need for collections over arrays.
+   - Need for collections over arrays ?
+      - 🔴 Limitations of Arrays
+            | Feature                          | Array                                                                               |
+| -------------------------------- | ----------------------------------------------------------------------------------- |
+| **Fixed Size**                   | Size is fixed during declaration and cannot grow dynamically                        |
+| **Homogeneous Elements**         | Can only store elements of one data type                                            |
+| **No Built-in Methods**          | Lacks utility methods like sorting, searching, etc.                                 |
+| **Difficult to Insert/Delete**   | Inserting/removing elements requires manual shifting                                |
+| **No Type Safety Before Java 5** | Only objects could be stored in `Object[]`, increasing risk of `ClassCastException` |
+
 
    - Interfaces vs classes in Collection API.
 
