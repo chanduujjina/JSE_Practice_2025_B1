@@ -15,13 +15,13 @@
 
      - ArrayList, LinkedList, Vector, Stack
 
-Set
+   - Set
 
-HashSet, LinkedHashSet, TreeSet
+     - HashSet, LinkedHashSet, TreeSet
 
-Queue
+   - Queue
 
-PriorityQueue, ArrayDeque
+     - PriorityQueue, ArrayDeque
 
 Map (interface)
 
