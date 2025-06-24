@@ -1,6 +1,6 @@
 🧠 Java Collections
 
- 🔹 1. Introduction
+ # 1. Introduction
     - What is the Collection framework?
 
      - Need for collections over arrays.
