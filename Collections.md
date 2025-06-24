@@ -13,7 +13,7 @@
 
    - List
 
---- ArrayList, LinkedList, Vector, Stack
+     - ArrayList, LinkedList, Vector, Stack
 
 Set
 
