@@ -3,9 +3,9 @@
  # 1. Introduction
     - What is the Collection framework?
 
-     - Need for collections over arrays.
+    - Need for collections over arrays.
 
-     - Interfaces vs classes in Collection API.
+    - Interfaces vs classes in Collection API.
 
 
 🔹 2. Hierarchy Diagram
