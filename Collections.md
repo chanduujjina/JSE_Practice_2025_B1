@@ -53,4 +53,12 @@
 
 
 
+## 6. Map Interface
+| Class           | Features                           |
+| --------------- | ---------------------------------- |
+| `HashMap`       | Key-value pairs, fast, allows null |
+| `LinkedHashMap` | Maintains insertion order          |
+| `TreeMap`       | Sorted map by key                  |
+| `Hashtable`     | Thread-safe, no null keys/values   |
+
 
