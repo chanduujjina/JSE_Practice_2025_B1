@@ -73,3 +73,37 @@
 | **Difficult to Insert/Delete**   | Inserting/removing elements requires manual shifting                                |
 | **No Type Safety Before Java 5** | Only objects could be stored in `Object[]`, increasing risk of `ClassCastException` |
 
+
+```mermaid
+mindmap
+  root((Java Collections Framework))
+    Iterable
+      Collection
+        List
+          ArrayList
+          LinkedList
+          Vector
+            Stack
+        Set
+          HashSet
+            LinkedHashSet
+          SortedSet
+            TreeSet
+        Queue
+          PriorityQueue
+          Deque
+            ArrayDeque
+        Map
+          HashMap
+            LinkedHashMap
+          SortedMap
+            TreeMap
+          Hashtable
+            Properties
+    Utilities
+      Collections
+      Arrays
+    Legacy
+      Enumeration
+      Dictionary
+```
