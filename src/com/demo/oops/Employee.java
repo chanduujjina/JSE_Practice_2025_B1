@@ -1,64 +1,43 @@
 package com.demo.oops;
 
-public class Employee {
+
+public class Employee implements Cloneable{
 	
-	
-	private int EmployeeId;
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + "]";
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	private int id;
 	
 	private String name;
-	
-	private String gender;
-	
-	private Long phoneNumber;
-	
-	// setter and getter methods
-	
-	
-	public void setEmployeeId (int EmployeeId) {
-		
-		this.EmployeeId = EmployeeId;
-		
-		
+
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
 	}
 	
-        public void setName(String name) {
-        	this.name = name;
-        	
-        }
-        
-        public void setGender(String gender) {
-        	this.gender = gender;
-        	
-        }
-        
-        public void setPhoneNumber (Long phoneNumber) {
-        	this.phoneNumber = phoneNumber;
-        	
-        }
-        
-        public int getEmployeeId() {
-        	return this.EmployeeId;
-        }
-        
-        public String getName() {
-        	return this.name;
-        }
-        
-        public String getGender() {
-        	return this.gender;
-        	
-        }
-        public Long phoneNumber() {
-        	return this.phoneNumber;
-        }
+	@Override
+	public  Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
 
-		public Long getPhoneNumber() {
-		return this.phoneNumber;
-		}
-		@Override
-		public String toString() {
-			return "Employee [EmployeeId=" + EmployeeId + ", name=" + name + ", gender=" + gender + ", phoneNumber="
-					+ phoneNumber + "]";
-		}
 
 }
