@@ -107,30 +107,26 @@ mindmap
       Enumeration
       Dictionary
 ```
-✅ Recommended Mermaid Component: flowchart
+## 📘 Java Collections Summary Table
+
 ```mermaid
-flowchart TD
-    A[Start] --> B{Need to store elements?}
-    B -- Key-Value Pairs --> C[Use Map]
-    C --> C1{Need sorted keys?}
-    C1 -- Yes --> C2[Use TreeMap]
-    C1 -- No --> C3{Need insertion order?}
-    C3 -- Yes --> C4[Use LinkedHashMap]
-    C3 -- No --> C5[Use HashMap]
 
-    B -- Just values --> D{Allow duplicates?}
-    D -- Yes --> E{Need order?}
-    E -- Yes --> F[Use List]
-    F --> F1[Use ArrayList (fast random access)]
-    F --> F2[Use LinkedList (fast insertion/removal)]
+## 📘 Java Collections Summary Table
 
-    E -- No --> G[Use Queue/Deque]
-    G --> G1[Use PriorityQueue (for priority)]
-    G --> G2[Use ArrayDeque (for stack/queue both)]
-
-    D -- No --> H{Need sorted elements?}
-    H -- Yes --> I[Use TreeSet]
-    H -- No --> J{Need insertion order?}
-    J -- Yes --> K[Use LinkedHashSet]
-    J -- No --> L[Use HashSet]
+| Collection Type | Interface | Allows Duplicates | Maintains Order | Sorted | Thread Safe | Best Used When... |
+|-----------------|-----------|-------------------|------------------|--------|--------------|--------------------|
+| **ArrayList**   | List      | Yes               | Yes (Insertion)  | No     | No           | You need fast random access and dynamic array size |
+| **LinkedList**  | List, Deque | Yes             | Yes (Insertion)  | No     | No           | You frequently add/remove elements from beginning/middle |
+| **Vector**      | List      | Yes               | Yes (Insertion)  | No     | Yes          | Thread safety is required in a list |
+| **Stack**       | List      | Yes               | LIFO             | No     | Yes (extends Vector) | You need LIFO (Last-In-First-Out) behavior |
+| **HashSet**     | Set       | No                | No               | No     | No           | You need unique elements, no order required |
+| **LinkedHashSet**| Set      | No                | Yes (Insertion)  | No     | No           | You need unique elements in insertion order |
+| **TreeSet**     | Set, SortedSet | No          | Yes (Sorted)     | Yes    | No           | You need sorted unique elements |
+| **PriorityQueue**| Queue    | Yes               | No               | Yes (Natural/Custom) | No | You need elements processed by priority |
+| **ArrayDeque**  | Deque     | Yes               | Yes (FIFO/LIFO)  | No     | No           | You need stack or queue without size restrictions |
+| **HashMap**     | Map       | Keys No, Values Yes | No            | No     | No           | You need fast access to key-value pairs |
+| **LinkedHashMap**| Map      | Keys No, Values Yes | Yes (Insertion) | No     | No           | You need key-value pairs with insertion order |
+| **TreeMap**     | Map, SortedMap | Keys No, Values Yes | Yes (Sorted Keys) | Yes | No      | You need key-value pairs sorted by keys |
+| **Hashtable**   | Map       | Keys No, Values Yes | No            | No     | Yes          | You need a legacy thread-safe map |
+| **Properties**  | Map       | Keys/Values as Strings | No         | No     | Yes          | You need config-like key-value storage (e.g., .properties files) |
 ```
