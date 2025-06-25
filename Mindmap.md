@@ -1,4 +1,5 @@
-```mindmap
+```mermaid
+mindmap
   root((Java Keywords))
   
     Control Statements
