@@ -107,3 +107,30 @@ mindmap
       Enumeration
       Dictionary
 ```
+✅ Recommended Mermaid Component: flowchart
+```mermaid
+flowchart TD
+    A[Start] --> B{Need to store elements?}
+    B -- Key-Value Pairs --> C[Use Map]
+    C --> C1{Need sorted keys?}
+    C1 -- Yes --> C2[Use TreeMap]
+    C1 -- No --> C3{Need insertion order?}
+    C3 -- Yes --> C4[Use LinkedHashMap]
+    C3 -- No --> C5[Use HashMap]
+
+    B -- Just values --> D{Allow duplicates?}
+    D -- Yes --> E{Need order?}
+    E -- Yes --> F[Use List]
+    F --> F1[Use ArrayList (fast random access)]
+    F --> F2[Use LinkedList (fast insertion/removal)]
+
+    E -- No --> G[Use Queue/Deque]
+    G --> G1[Use PriorityQueue (for priority)]
+    G --> G2[Use ArrayDeque (for stack/queue both)]
+
+    D -- No --> H{Need sorted elements?}
+    H -- Yes --> I[Use TreeSet]
+    H -- No --> J{Need insertion order?}
+    J -- Yes --> K[Use LinkedHashSet]
+    J -- No --> L[Use HashSet]
+```
