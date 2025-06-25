@@ -107,11 +107,12 @@ mindmap
       Enumeration
       Dictionary
 ```
-## 📘 Java Collections Summary Table
 
+
+
+
+## 📘 Java Collections Summary Table
 ```mermaid
-
-## 📘 Java Collections Summary Table
 
 | Collection Type | Interface | Allows Duplicates | Maintains Order | Sorted | Thread Safe | Best Used When... |
 |-----------------|-----------|-------------------|------------------|--------|--------------|--------------------|
