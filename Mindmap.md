@@ -15,40 +15,7 @@ mindmap
       continue
       return
 
-    Access Modifiers
-      public
-      private
-      protected
-
-    Class/Object/Inheritance
-      class
-      interface
-      enum
-      extends
-      implements
-      new
-      this
-      super
-      instanceOf
-
-    Exception Handling
-      try
-      catch
-      finally
-      throw
-      throws
-      assert
-
-    Memory Management / GC
-      null
-      final
-      static
-      transient
-      volatile
-
-    Synchronization / Concurrency
-      synchronized
-      native
+   
 
     Flow Control (Advanced)
       return
@@ -56,10 +23,7 @@ mindmap
       break
       continue
 
-    Object Class Related
-      this
-      super
-      instanceof
+
 
     Package / Import
       package
@@ -83,10 +47,5 @@ mindmap
       break
       continue
 
-    Others / Misc
-      void
-      abstract
-      strictfp
-      const [reserved]
-      goto [reserved]
+ 
 ```
