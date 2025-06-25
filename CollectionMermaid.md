@@ -1,0 +1,33 @@
+```mermaid
+mindmap
+  root((Java Collections Framework))
+    Iterable
+      Collection
+        List
+          ArrayList
+          LinkedList
+          Vector
+            Stack
+        Set
+          HashSet
+            LinkedHashSet
+          SortedSet
+            TreeSet
+        Queue
+          PriorityQueue
+          Deque
+            ArrayDeque
+        Map
+          HashMap
+            LinkedHashMap
+          SortedMap
+            TreeMap
+          Hashtable
+            Properties
+    Utilities
+      Collections
+      Arrays
+    Legacy
+      Enumeration
+      Dictionary
+```
