@@ -112,3 +112,18 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
 | `offerFirst(E e)` | Adds element to the **front** (head) of the list (Deque style) |
 | `offerLast(E e)`  | Adds element to the **end** (tail), same as `offer(e)`         |
 
+
+🔁 LinkedList Dual Nature
+- LinkedList implements both:
+
+- List interface (like ArrayList)
+
+- Deque (Double-Ended Queue) interface
+
+  - This makes it behave like:
+
+  - A Queue (FIFO)
+  - A Stack (LIFO)
+
+
+
