@@ -143,5 +143,11 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
 | `pop()`       | Front (head) | Stack-style pop (removes head) |
 | `peekFirst()` | Front (head) | Top of stack (no remove)       |
 
-
+## 🔍 Difference Between poll(), peek(), pop(), peekFirst()
+| Method        | Removes? | Throws Exception if Empty?       | From Where? | Interface       | Use Case     |
+| ------------- | -------- | -------------------------------- | ----------- | --------------- | ------------ |
+| `poll()`      | ✅ Yes    | ❌ No (returns `null`)            | Head        | `Queue`         | Queue (FIFO) |
+| `peek()`      | ❌ No     | ❌ No (returns `null`)            | Head        | `Queue`         | Queue (FIFO) |
+| `pop()`       | ✅ Yes    | ✅ Yes (`NoSuchElementException`) | Head        | `Deque` / Stack | Stack (LIFO) |
+| `peekFirst()` | ❌ No     | ❌ No (returns `null`)            | Head        | `Deque`         | Stack/Deque  |
 
