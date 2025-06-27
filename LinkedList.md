@@ -125,5 +125,23 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
   - A Queue (FIFO)
   - A Stack (LIFO)
 
+## 🔷 Queue-Like Behavior (FIFO)
+
+| Method         | Adds Where?  | Behavior                                                          |
+| -------------- | ------------ | ----------------------------------------------------------------- |
+| `offer(e)`     | End (tail)   | Queue-style insert (safe)                                         |
+| `add(e)`       | End (tail)   | Same as `offer`, but throws exception if full (in bounded queues) |
+| `offerLast(e)` | End (tail)   | Same as `offer(e)`                                                |
+| `poll()`       | Front (head) | Removes and returns first element                                 |
+| `peek()`       | Front (head) | Returns first element without removing                            |
+
+## 🔷 Stack-Like Behavior (LIFO)
+| Method        | Adds Where?  | Behavior                       |
+| ------------- | ------------ | ------------------------------ |
+| `push(e)`     | Front (head) | Stack-style push (LIFO)        |
+| `addFirst(e)` | Front (head) | Same as `push`                 |
+| `pop()`       | Front (head) | Stack-style pop (removes head) |
+| `peekFirst()` | Front (head) | Top of stack (no remove)       |
+
 
 
