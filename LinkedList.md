@@ -162,3 +162,16 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
 - peekFirst(): like peek(), just more explicit for deque usage.
 
 - 💡 Use poll() and peek() in queues, and pop() and push() in stacks.
+
+## 📘 Remove element
+
+| You Want To...                   | Use This Method          |
+| -------------------------------- | ------------------------ |
+| Remove safely from front         | `poll()`                 |
+| Remove safely from back          | `pollLast()`             |
+| Remove with exception from front | `pop()`                  |
+| Remove with exception from back  | `removeLast()`           |
+| Just look at front               | `peek()` / `peekFirst()` |
+| Just look at back                | `peekLast()`             |
+
+
