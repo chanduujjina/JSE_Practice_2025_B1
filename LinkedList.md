@@ -151,3 +151,14 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
 | `pop()`       | ✅ Yes    | ✅ Yes (`NoSuchElementException`) | Head        | `Deque` / Stack | Stack (LIFO) |
 | `peekFirst()` | ❌ No     | ❌ No (returns `null`)            | Head        | `Deque`         | Stack/Deque  |
 
+## 🔁 Summary:
+
+- poll(): safe removal from front — returns null if empty.
+
+- peek(): safe lookup from front — returns null if empty.
+
+- pop(): stack-style removal from front — throws exception if empty.
+
+- peekFirst(): like peek(), just more explicit for deque usage.
+
+- 💡 Use poll() and peek() in queues, and pop() and push() in stacks.
