@@ -105,3 +105,10 @@ A categorized overview of commonly used methods in `java.util.LinkedList`.
 | Loop with `if(condition)`      | Filter elements based on logic               |
 | Build new list manually        | Add filtered elements to a new list          |
 
+## 🔹 offer() Methods in LinkedList
+| Method            | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `offer(E e)`      | Adds element to the **end** (tail) of the list (Queue style)   |
+| `offerFirst(E e)` | Adds element to the **front** (head) of the list (Deque style) |
+| `offerLast(E e)`  | Adds element to the **end** (tail), same as `offer(e)`         |
+
