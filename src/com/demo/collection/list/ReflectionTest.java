@@ -6,7 +6,7 @@ public class ReflectionTest {
 	
 	public static void main(String[] args) throws ClassNotFoundException {
 		
-		Class<?> cls = Class.forName("java.util.ArrayList");
+		Class<?> cls = Class.forName("java.util.LinkedList");
 		
 		Method[] declaredMethods = cls.getMethods();
 		
