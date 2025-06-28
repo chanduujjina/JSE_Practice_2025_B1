@@ -1,5 +1,5 @@
-🎨 Complete Design Patterns Classification in Java
-🔷 1. Creational Patterns
+#🎨 Complete Design Patterns Classification in Java
+## 🔷 1. Creational Patterns
 | Pattern              | Purpose                                              | Real-world Java Use Case                              |
 | -------------------- | ---------------------------------------------------- | ----------------------------------------------------- |
 | **Singleton**        | Ensure a class has only one instance                 | Logger, DB connection manager, config class           |
@@ -8,8 +8,8 @@
 | **Builder**          | Builds complex objects step by step                  | `StringBuilder`, constructing HTML/XML objects        |
 | **Prototype**        | Clones existing objects                              | Object cloning via `clone()`                          |
 
-🔶 2. Structural Patterns
-These patterns deal with class and object composition — how classes are structured and interact.
+## 🔶 2. Structural Patterns
+- These patterns deal with class and object composition — how classes are structured and interact.
 | Pattern       | Purpose                                     | Real-world Java Use Case                               |
 | ------------- | ------------------------------------------- | ------------------------------------------------------ |
 | **Adapter**   | Converts one interface to another           | `InputStreamReader`, `Arrays.asList()`                 |
@@ -21,8 +21,8 @@ These patterns deal with class and object composition — how classes are struct
 | **Flyweight** | Shares common objects to save memory        | `Integer.valueOf()`, `String` pool                     |
 
 
-🔁 3. Behavioral Patterns
-These patterns manage algorithms, relationships, and responsibilities between objects.
+## 🔁 3. Behavioral Patterns
+- These patterns manage algorithms, relationships, and responsibilities between objects.
 | Pattern                     | Purpose                                         | Real-world Java Use Case                                        |
 | --------------------------- | ----------------------------------------------- | --------------------------------------------------------------- |
 | **Strategy**                | Select an algorithm at runtime                  | `Comparator` / sorting strategies                               |
@@ -38,7 +38,7 @@ These patterns manage algorithms, relationships, and responsibilities between ob
 | **Interpreter**             | Implements grammar/interpretation rules         | Expression evaluators, DSLs                                     |
 
 
-🧠 Summary Matrix (All Design Patterns)
+## 🧠 Summary Matrix (All Design Patterns)
 | Type           | Design Patterns                                                                                                                 |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **Creational** | Singleton, Factory Method, Abstract Factory, Builder, Prototype                                                                 |
