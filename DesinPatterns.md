@@ -45,7 +45,7 @@
 | **Structural** | Adapter, Decorator, Facade, Proxy, Composite, Bridge, Flyweight                                                                 |
 | **Behavioral** | Strategy, Observer, Command, Template Method, Iterator, Chain of Responsibility, Mediator, State, Memento, Visitor, Interpreter |
 
-###🧱 Singleton Design Pattern
+### 🧱 Singleton Design Pattern
 - ✅ Purpose:
    - Ensure that a class has only one instance and provide a global point of access to it.
 
