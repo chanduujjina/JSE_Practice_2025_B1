@@ -1,31 +1,28 @@
 ## 🏭 Factory Method Pattern
 ```mermaid
-        +------------------+
-        |   <<interface>>  |
-        |     Product      |
-        +------------------+
-                ▲
-                |
-        +------------------+          +------------------+
-        | ConcreteProductA |          | ConcreteProductB |
-        +------------------+          +------------------+
+classDiagram
+    class Product {
+        <<interface>>
+    }
 
-        +------------------+
-        |   <<Creator>>    |
-        |   Creator        |
-        |------------------|
-        | +factoryMethod() |
-        +------------------+
-                ▲
-        +-----------------------+
-        |   ConcreteCreatorA    |
-        |-----------------------|
-        | +factoryMethod()      |
-        +-----------------------+
+    class ConcreteProductA
+    class ConcreteProductB
+    Product <|-- ConcreteProductA
+    Product <|-- ConcreteProductB
 
-        +-----------------------+
-        |   ConcreteCreatorB    |
-        |-----------------------|
-        | +factoryMethod()      |
-        +-----------------------+
+    class Creator {
+        <<abstract>>
+        +factoryMethod(): Product
+    }
+
+    class ConcreteCreatorA {
+        +factoryMethod(): Product
+    }
+
+    class ConcreteCreatorB {
+        +factoryMethod(): Product
+    }
+
+    Creator <|-- ConcreteCreatorA
+    Creator <|-- ConcreteCreatorB
 ```
