@@ -7,6 +7,7 @@
 | **Abstract Factory** | Provides an interface for creating related objects   | GUI Toolkit (e.g., create buttons for different OSes) |
 | **Builder**          | Builds complex objects step by step                  | `StringBuilder`, constructing HTML/XML objects        |
 | **Prototype**        | Clones existing objects                              | Object cloning via `clone()`                          |
+
 🔶 2. Structural Patterns
 These patterns deal with class and object composition — how classes are structured and interact.
 | Pattern       | Purpose                                     | Real-world Java Use Case                               |
@@ -35,6 +36,7 @@ These patterns manage algorithms, relationships, and responsibilities between ob
 | **Memento**                 | Save and restore object state (undo)            | IDEs, Text editors — undo/redo                                  |
 | **Visitor**                 | Separate algorithm from object structure        | File system operations, AST parsing                             |
 | **Interpreter**             | Implements grammar/interpretation rules         | Expression evaluators, DSLs                                     |
+
 
 🧠 Summary Matrix (All Design Patterns)
 | Type           | Design Patterns                                                                                                                 |
