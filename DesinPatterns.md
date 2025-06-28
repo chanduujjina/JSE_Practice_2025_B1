@@ -9,7 +9,7 @@
 | **Prototype**        | Clones existing objects                              | Object cloning via `clone()`                          |
 
 ## 🔶 2. Structural Patterns
- - These patterns deal with class and object composition — how classes are structured and interact.
+
 | Pattern       | Purpose                                     | Real-world Java Use Case                               |
 | ------------- | ------------------------------------------- | ------------------------------------------------------ |
 | **Adapter**   | Converts one interface to another           | `InputStreamReader`, `Arrays.asList()`                 |
@@ -22,7 +22,7 @@
 
 
 ## 🔁 3. Behavioral Patterns
- - These patterns manage algorithms, relationships, and responsibilities between objects.
+
 | Pattern                     | Purpose                                         | Real-world Java Use Case                                        |
 | --------------------------- | ----------------------------------------------- | --------------------------------------------------------------- |
 | **Strategy**                | Select an algorithm at runtime                  | `Comparator` / sorting strategies                               |
