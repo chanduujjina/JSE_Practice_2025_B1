@@ -49,4 +49,8 @@
 - ✅ Purpose:
    - Ensure that a class has only one instance and provide a global point of access to it.
 
+### 🏭 Factory Method Design Pattern in Java
+- ✅ Purpose:
+   - Defines an interface for creating an object, but lets subclasses decide which class to instantiate.
 
+   - This promotes loose coupling and follows Open/Closed Principle — new types can be added without modifying existing code.
