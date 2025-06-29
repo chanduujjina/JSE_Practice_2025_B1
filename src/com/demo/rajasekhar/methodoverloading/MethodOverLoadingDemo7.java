@@ -2,7 +2,7 @@ package com.demo.rajasekhar.methodoverloading;
 
 public class MethodOverLoadingDemo7 {
 	public static void main(String[] args) {
-		m1(1,2);
+		// m1(1,2);
 	}
 	static void m1(Integer a, long b)
 	{
