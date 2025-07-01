@@ -1,16 +1,12 @@
 ```mermaid
-TreeSet Navigation
-|
-|-- lower(E)        -> Greatest element strictly < E
-|-- floor(E)        -> Greatest element ≤ E
-|-- ceiling(E)      -> Least element ≥ E
-|-- higher(E)       -> Least element strictly > E
-|
-|-- Edge Cases
-     |-- Empty TreeSet → All return null
-     |-- No such element → Return null (not exception)
-|
-|-- Real Use Cases
-     |-- Get just smaller or just higher range values
-     |-- Scheduling, Slot Matching, Leaderboards
+flowchart TD
+  A[TreeSet Navigation Methods]
+  A --> B1[lower(E)<br>Greatest element < E]
+  A --> B2[floor(E)<br>Greatest element ≤ E]
+  A --> B3[ceiling(E)<br>Least element ≥ E]
+  A --> B4[higher(E)<br>Least element > E]
+  A --> C[Edge Cases]
+  C --> C1[Empty TreeSet → all return null]
+  C --> C2[No such element → null, not exception]
+
 ```
