@@ -6,7 +6,7 @@ public class ReflectionTest {
 	
 	public static void main(String[] args) throws ClassNotFoundException {
 		
-		Class<?> cls = Class.forName("java.util.Vector");
+		Class<?> cls = Class.forName("java.util.TreeSet");
 		
 		Method[] declaredMethods = cls.getMethods();
 		
