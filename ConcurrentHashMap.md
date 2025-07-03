@@ -17,3 +17,11 @@
 - Each Segment extends ReentrantLock
 - A Segment contains its own HashEntry[] (bucket array)
 
+### 🔸 Default Segments Count
+
+| Property             | Value          |
+| -------------------- | -------------- |
+| **Default segments** | `16`           |
+| **Max segments**     | `2^16 = 65536` |
+| **Configurable?**    | ✅ Yes         |
+
