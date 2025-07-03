@@ -25,3 +25,13 @@
 | **Max segments**     | `2^16 = 65536` |
 | **Configurable?**    | ✅ Yes         |
 
+### 🔄 Segment Lookup
+```java
+| Operation     | Lock Type                    | Details                                  |
+| ------------- | ---------------------------- | ---------------------------------------- |
+| **get()**     | Lock-free                    | Uses `volatile` reads                    |
+| **put()**     | Synchronized on bucket       | Only locks a single bin (not entire map) |
+| **resize()**  | Global lock                  | But rare and gradual                     |
+| **compute()** | Synchronizes on key hash bin |                                          |
+
+```
