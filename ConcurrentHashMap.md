@@ -26,7 +26,7 @@
 | **Configurable?**    | ✅ Yes         |
 
 ### 🔄 Segment Lookup
-```java
+
 | Operation     | Lock Type                    | Details                                  |
 | ------------- | ---------------------------- | ---------------------------------------- |
 | **get()**     | Lock-free                    | Uses `volatile` reads                    |
@@ -34,4 +34,9 @@
 | **resize()**  | Global lock                  | But rare and gradual                     |
 | **compute()** | Synchronizes on key hash bin |                                          |
 
+```java
+segmentFor(hash) {
+    return segments[(hash >>> segmentShift) & segmentMask];
+}
 ```
+
