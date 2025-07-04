@@ -11,5 +11,6 @@ public class IndentifyDemo1 {
 		map.put(new Employe(2,"test2"), "sample2");
 		System.out.println(map);
 	}
+	
 
 }
