@@ -1,5 +1,6 @@
 package com.demo.collection.map;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -24,6 +25,18 @@ public class HashMapDemo2 {
 			System.out.println(entry.getKey());
 			System.out.println(entry.getValue());
 		}
+		
+		//how to fetch only kes
+		
+		Set<Integer> keySet = map.keySet();
+		
+		System.out.println(keySet);
+		
+		//fetch only values
+		
+		Collection<String> values = map.values();
+		
+		System.out.println(values);
 	}
 
 }
