@@ -1,45 +1,42 @@
-# 🔐 ConcurrentHashMap in Java
+# ✅ What is ConcurrentHashMap?
 
-## ✅ Overview
+- ConcurrentHashMap is a thread-safe, high-performance Map implementation from java.util.concurrent package, introduced in Java 5.
+- Unlike Hashtable or Collections.synchronizedMap, it allows multiple threads to read and write without locking the entire map, enabling much better concurrency.
 
-`ConcurrentHashMap` is a thread-safe, high-performance implementation of the `Map` interface.  
-It is part of the `java.util.concurrent` package and designed for concurrent use in multithreaded environments.
+  ## 🧵 How It Accommodates Threads Efficiently
 
----
+| Feature                | Explanation                                           |
+| ---------------------- | ----------------------------------------------------- |
+| **Read operations**    | Mostly **lock-free** using volatile variables         |
+| **Write operations**   | **Fine-grained locking**, only locks required portion |
+| **Internal structure** | Changes between Java 7 and Java 8 (explained below)   |
 
-## 🔧 Internal Working
+## 🏗️ Internal Working: Java 7 (Segmented Locking)
+### 🔸 Structure
+- The map is internally divided into Segments
+- Each Segment extends ReentrantLock
+- A Segment contains its own HashEntry[] (bucket array)
 
-### Java 7:
-- Used **Segmented Locking**
-- Divided map into segments, each with its own lock
+### 🔸 Default Segments Count
 
-### Java 8:
-- Removed segments
-- Uses **bucket-level locks** and **CAS (Compare-And-Swap)** for writes
-- **Lock-free reads** and **fine-grained locking**
+| Property             | Value          |
+| -------------------- | -------------- |
+| **Default segments** | `16`           |
+| **Max segments**     | `2^16 = 65536` |
+| **Configurable?**    | ✅ Yes         |
 
----
+### 🔄 Segment Lookup
 
-## 🧠 Key Features
-
-| Feature                  | Details                         |
-|--------------------------|---------------------------------|
-| Thread-safe              | ✅ Yes                          |
-| Null keys/values         | ❌ Not allowed                 |
-| Read operations          | Lock-free                      |
-| Write operations         | Synchronized on bucket         |
-| Performance              | High in concurrent access       |
-| Iterator behavior        | Fail-safe                      |
-
----
-
-## ⚙️ Common Operations
+| Operation     | Lock Type                    | Details                                  |
+| ------------- | ---------------------------- | ---------------------------------------- |
+| **get()**     | Lock-free                    | Uses `volatile` reads                    |
+| **put()**     | Synchronized on bucket       | Only locks a single bin (not entire map) |
+| **resize()**  | Global lock                  | But rare and gradual                     |
+| **compute()** | Synchronizes on key hash bin |                                          |
 
 ```java
-ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+segmentFor(hash) {
+    return segments[(hash >>> segmentShift) & segmentMask];
+}
+```
 
-map.put("a", 1);
-map.get("a");
-map.putIfAbsent("b", 2);
-map.remove("a");
-map.compute("a", (k, v) -> v + 1);
