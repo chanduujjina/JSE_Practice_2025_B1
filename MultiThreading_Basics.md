@@ -61,3 +61,41 @@ Thread[#33,Thread-4,5,main]
 | **5**        | Default priority                 |
 | **main**     | Belongs to main thread group     |
 
+
+```java
+public class CustomThread  extends Thread {
+	
+	private int id;
+	
+	public CustomThread(int id) {
+		this.id = id;
+	}
+	
+	@Override
+	public void run() {
+		
+		 System.out.println("Thread started: " + Thread.currentThread() + " ID: " + id);
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			System.out.println("Thread interrupted: " + id);
+		}
+		
+		System.out.println("Thread finished: " + Thread.currentThread() + " ID: " + id);
+		
+	}
+
+}
+
+for (int i = 1;i<10;i++) {
+			CustomThread customThread = new CustomThread(i);
+			customThread.start();
+		}
+
+```
+
+## 🔍 What This Output Shows:
+
+
+
