@@ -38,3 +38,26 @@ class MyThread extends Thread {
 MyThread t1 = new MyThread();
 t1.start();
 ```
+
+## 🔹 Thread Lifecycle
+- New
+
+- Runnable
+
+- Running
+
+- Blocked / Waiting
+
+- Terminated
+
+```
+Thread[#33,Thread-4,5,main]
+```
+
+| Value        | Meaning                          |
+| ------------ | -------------------------------- |
+| **#33**      | JVM thread ID (incremental)      |
+| **Thread-4** | 5th thread created (starts at 0) |
+| **5**        | Default priority                 |
+| **main**     | Belongs to main thread group     |
+
