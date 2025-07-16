@@ -97,5 +97,12 @@ for (int i = 1;i<10;i++) {
 
 ## 🔍 What This Output Shows:
 
+| What Happened                       | What It Means                                                          |
+| ----------------------------------- | ---------------------------------------------------------------------- |
+| **Started in random order**         | JVM scheduled threads independently; not guaranteed sequential         |
+| **Finished in different order**     | Some threads finished earlier depending on CPU and sleep timing        |
+| **Thread IDs (`#29`, `#30`, etc.)** | Internally assigned by JVM (unique per thread)                         |
+| **Thread Names (`Thread-0`, etc.)** | Default names; auto-incremented                                        |
+| **`main`** group                    | All threads are part of `main` thread group unless custom group is set |
 
 
