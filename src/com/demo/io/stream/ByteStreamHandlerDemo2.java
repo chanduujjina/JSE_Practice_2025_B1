@@ -16,6 +16,7 @@ public class ByteStreamHandlerDemo2 {
 	      String outputFile = "resources/images/Kubernates_founder_copy.jpg";
 		
 		writeDatatoFile(outputFile,imageData);
+		System.out.println(readEncodeDataFromFile(inputFile));
 	}
 
 	private static byte[] readDataFromFile(String inputFile) {
