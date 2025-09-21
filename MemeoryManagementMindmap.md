@@ -1,18 +1,15 @@
-```mermaid
-mindmap
-  root((Storage))
-    Heap
-      Objects
-      Instance Varibles
-      
-    Stack
-      Local Variables
-      
-      Method Calls
+```mindmap
+  root((Java Storage))
     MetaSpace
-      Method Code
       Static Variables
       Static Block
+      Method Code
+    Heap
+      Objects
+      Instance Variables
+    Stack
+      Method Calls
+      Local Variables
 
 
 
