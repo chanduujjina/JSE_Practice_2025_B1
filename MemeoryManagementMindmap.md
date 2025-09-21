@@ -1,4 +1,4 @@
-```mindmap
+```
   root((Java Storage))
     MetaSpace
       Static Variables
