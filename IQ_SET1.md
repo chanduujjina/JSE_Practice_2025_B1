@@ -92,3 +92,17 @@
 - Why composition is preferred over inheritance?
 
 - Explain clone() and deep vs shallow copy.
+
+## TRICKY / DECIDING QUESTIONS
+
+- Can a constructor be synchronized?
+
+- Can we override static methods?
+
+- What happens if equals() is overridden but not hashCode()?
+
+- Why String is immutable (deep reasoning)?
+
+- Difference between Comparable vs Comparator.
+
+- How does JVM load classes? (ClassLoader flow)
