@@ -36,3 +36,20 @@
 - How does parallel stream work internally?
 
 - Explain CAS (Compare-And-Swap).
+
+
+## 🔹 COLLECTIONS (VERY COMMON)
+
+- HashMap internal working (Java 8).
+
+- Why HashMap is not thread-safe?
+
+- Difference between HashMap, Hashtable, ConcurrentHashMap.
+
+- Why HashMap allows one null key?
+
+- What happens if HashMap size exceeds threshold?
+
+- Difference between ArrayList vs LinkedList.
+
+- Difference between fail-fast vs fail-safe iterators.
