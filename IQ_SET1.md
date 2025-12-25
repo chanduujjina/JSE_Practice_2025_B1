@@ -53,3 +53,18 @@
 - Difference between ArrayList vs LinkedList.
 
 - Difference between fail-fast vs fail-safe iterators.
+
+
+## 🔹 JAVA 8 & FUNCTIONAL (IMPORTANT)
+
+- Difference between map() vs flatMap().
+
+- Difference between Optional.orElse vs orElseGet.
+
+- What is method reference?
+
+- What is functional interface?
+
+- Difference between Predicate, Function, Consumer, Supplier.
+
+- When NOT to use streams?
