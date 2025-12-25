@@ -68,3 +68,14 @@
 - Difference between Predicate, Function, Consumer, Supplier.
 
 - When NOT to use streams?
+
+
+## 🔹 EXCEPTIONS & DESIGN
+
+- Why checked exceptions are considered bad in modern APIs?
+
+- How do you design custom exceptions?
+
+- Difference between throw vs throws.
+
+- How exception handling affects transactions?
