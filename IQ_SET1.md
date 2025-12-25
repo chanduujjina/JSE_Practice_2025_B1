@@ -106,3 +106,86 @@
 - Difference between Comparable vs Comparator.
 
 - How does JVM load classes? (ClassLoader flow)
+
+
+MARKER INTERFACE (VERY COMMON)
+
+What is a Marker Interface?
+
+Why does Java have marker interfaces?
+
+Examples of marker interfaces in Java?
+
+How does JVM use marker interfaces internally?
+
+Why marker interfaces are considered better than annotations (earlier)?
+
+What problem marker interfaces solve in real applications?
+
+🔹 SERIALIZATION & EXTERNALIZATION (HIGH PRIORITY)
+
+## What is Serialization in Java?
+
+## Why do we need serialization?
+
+## Difference between Serializable vs Externalizable.
+
+## What happens during serialization internally?
+
+## What is serialVersionUID? Why is it important?
+
+## What happens if serialVersionUID is changed?
+
+## Can we serialize a static variable?
+
+## Can we serialize a final variable?
+
+## What happens if superclass is not Serializable?
+
+## Security issues with Java serialization?
+
+🔹 TRANSIENT KEYWORD (VERY COMMON)
+
+## What is the transient keyword?
+
+## Why do we mark variables as transient?
+
+## What happens to transient variables during serialization?
+
+## Can transient variables be serialized manually?
+
+## Real-world use case of transient keyword?
+
+🔹 I/O STREAMS (MUST PREPARE)
+
+Difference between Byte streams vs Character streams.
+
+Difference between InputStream vs Reader.
+
+Difference between FileInputStream vs FileReader.
+
+What is BufferedInputStream / BufferedReader?
+
+Why buffering improves performance?
+
+Difference between ObjectInputStream vs DataInputStream.
+
+What is try-with-resources?
+
+How does Java handle file encoding?
+
+Common I/O performance issues and solutions?
+
+🔹 TRICKY / DECIDING QUESTIONS (FROM THESE TOPICS)
+
+Why Serializable is a marker interface?
+
+Why Externalizable is not a marker interface?
+
+Can we serialize a transient final variable?
+
+What happens if an object graph has circular references?
+
+Difference between shallow vs deep serialization?
+
+Why Java serialization is discouraged in microservices?
