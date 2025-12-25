@@ -16,3 +16,23 @@
 - How does JVM decide an object is eligible for GC?
 
 - Difference between Serial, Parallel, CMS, G1 GC (high level).
+
+
+
+## 🔹 CONCURRENCY & MULTITHREADING (MUST PREPARE)
+
+- Explain happens-before relationship.
+
+- Difference between volatile, synchronized, Atomic variables.
+
+- Explain ReentrantLock vs synchronized.
+
+- What is ThreadLocal? Use case?
+
+- Explain Deadlock, Livelock, Starvation.
+
+- What is ForkJoinPool?
+
+- How does parallel stream work internally?
+
+- Explain CAS (Compare-And-Swap).
