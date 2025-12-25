@@ -79,3 +79,16 @@
 - Difference between throw vs throws.
 
 - How exception handling affects transactions?
+
+
+## OBJECT & CLASS DESIGN
+
+- Explain immutability with real example.
+
+- How to make a class thread-safe?
+
+- Difference between composition vs inheritance.
+
+- Why composition is preferred over inheritance?
+
+- Explain clone() and deep vs shallow copy.
